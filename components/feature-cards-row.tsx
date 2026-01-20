@@ -1,0 +1,93 @@
+"use client"
+
+import Image from "next/image"
+
+interface Feature {
+  iconPath: string
+  iconAlt: string
+  title: string
+  description: string
+}
+
+interface FeatureCardsRowProps {
+  heroCta: string
+  heroCta2?: string
+  features: Feature[]
+}
+
+export function FeatureCardsRow({ heroCta, heroCta2, features }: FeatureCardsRowProps) {
+  return (
+    <div className="relative w-full max-w-6xl mx-auto px-4">
+      {/* Hero glass panel with CTA */}
+      <div
+  className="
+    relative
+    rounded-[28px]
+    bg-gradient-to-b from-white/3 via-white/1 to-white/5
+    backdrop-blur-3xl
+    border border-white/40
+    ring-1.5 ring-inset ring-white/150
+    p-10 md:p-12
+    shadow-[0_40px_160px_rgba(0,0,0,0.25)]
+    mb-8
+    overflow-hidden
+  "
+   >
+        <div className="text-center">
+          <button className="px-8 py-3 bg-gradient-to-r from-[#FF7A00] to-[#FF9A2A] text-white rounded-full hover:shadow-xl hover:shadow-orange-500/30 transition-all font-semibold text-base hover:scale-105 transform">
+            {heroCta}
+          </button>
+        </div>
+      </div>
+
+      {/* Feature cards row */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 -mt-4 relative z-10">
+        {features.map((feature, index) => (
+          <div key={index} className="relative group">
+            {/* Bottom glow effect */}
+            <div className="absolute inset-x-4 -bottom-3 h-4 bg-gradient-to-t from-[#FFD84D]/25 to-transparent blur-lg" />
+
+       {/* Card */}
+<div
+  className="
+    relative
+    rounded-[24px]
+    bg-gradient-to-b from-white/14 via-white/6 to-white/10
+    backdrop-blur-2xl
+    border border-white/12
+    ring-2 ring-inset ring-white/10
+    shadow-[0_4px_25px_rgba(0,0,0,0.2)]
+    p-6
+    transition-all duration-300 ease-out
+    group-hover:shadow-[0_10px_40px_rgba(0,0,0,0.4)]
+    group-hover:-translate-y-1
+  "
+>
+
+              {/* Inner subtle glow using ring */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+
+              <div className="relative">
+                <div className="mb-4 w-12 h-12 relative">
+                  <Image
+                    src={feature.iconPath || "/placeholder.svg"}
+                    alt={feature.iconAlt}
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl font-bold text-[#1E1E1E] mb-3">{feature.title}</h3>
+
+                {/* Description */}
+                <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
