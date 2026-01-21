@@ -48,11 +48,13 @@ export function ContactCtaSection() {
   }
 
   return (
+    
     <section className="py-20 sm:py-24 border-t border-white/20">
+      
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 text-balance">{t.contact.title}</h2>
-          <p className="text-lg text-gray-600 text-pretty">{t.contact.subtitle}</p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-300/50 mb-4 text-balance">{t.contact.title}</h2>
+          <p className="text-lg text-gray-400/60 text-pretty">{t.contact.subtitle}</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -65,7 +67,7 @@ export function ContactCtaSection() {
               onChange={handleChange}
               placeholder={t.contact.namePlaceholder}
               required
-              className="px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition"
+              className="px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-orange-500/80 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition"
             />
 
             {/* Email Input */}
@@ -76,7 +78,7 @@ export function ContactCtaSection() {
               onChange={handleChange}
               placeholder={t.contact.emailPlaceholder}
               required
-              className="px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition"
+              className="px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-orange-500/80 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition"
             />
           </div>
 
@@ -88,7 +90,7 @@ export function ContactCtaSection() {
             placeholder={t.contact.messagePlaceholder}
             required
             rows={5}
-            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition resize-none"
+            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-orange-500/80 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition resize-none"
           />
 
           {/* Submit Button */}
@@ -100,12 +102,14 @@ export function ContactCtaSection() {
               {submitted ? t.contact.sending : t.contact.button}
             </button>
           </div>
+          
         </form>
 
         {submitted && (
           <div className="mt-6 p-4 bg-green-50/50 border border-green-500/20 rounded-lg text-center text-green-700 text-sm">
             {t.contact.successMessage}
           </div>
+          
         )}
       </div>
     </section>

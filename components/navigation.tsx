@@ -9,24 +9,24 @@ export function Navigation() {
   const t = translations[language]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-gradient-to-br from-white/80 via-white/70 to-green-50/50 border-b border-white/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-gradient-to-br from-ember/30 via-orange/15 to-yellow-50/30 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-15">
             {/* Logo */}
             <div className="flex items-center gap-2 flex-shrink-0">
-              <img src="/images/4da105cc-84a7-4475-9f42-0b138a0b04ff.jpg" alt="hookon logo" className="h-8" />
+              <img src="/images/hookon-logo.png" alt="hookon logo" className="h-40" />
             </div>
 
             {/* Nav Links */}
             <div className="hidden md:flex items-center gap-8">
-              <a href="#about" className="text-gray-700 hover:text-orange-500 transition text-sm font-medium">
+              <a href="#about" className="text-gray-400 hover:text-orange-500 transition text-sm font-medium">
                 {t.nav.about}
               </a>
-              <a href="#services" className="text-gray-700 hover:text-orange-500 transition text-sm font-medium">
+              <a href="#services" className="text-gray-400 hover:text-orange-500 transition text-sm font-medium">
                 {t.nav.services}
               </a>
-              <a href="#work" className="text-gray-700 hover:text-orange-500 transition text-sm font-medium">
+              <a href="#work" className="text-gray-400 hover:text-orange-500 transition text-sm font-medium">
                 {t.nav.work}
               </a>
             </div>

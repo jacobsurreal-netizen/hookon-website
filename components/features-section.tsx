@@ -30,26 +30,26 @@ export function FeaturesSection() {
   ]
 
   return (
-    <section id="services" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-green-50/30 to-white -z-10" />
+    <section id="services" className="relative py-38 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-green-70/30 to-white/10 -z-70" />
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">{t.features.title}</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t.features.subtitle}</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-400/60 mb-4 text-balance">{t.features.title}</h2>
+          <p className="text-lg text-orange-600/80 max-w-2xl mx-auto">{t.features.subtitle}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, idx) => (
             <div
               key={idx}
-              className="group relative p-4 rounded-3xl backdrop-blur-xl bg-gradient-to-br from-white/50 to-white/30 border border-white/80 hover:border-orange-200/60 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10"
+              className="group relative p-4 rounded-3xl backdrop-blur-xl bg-gradient-to-br from-white/20 to-white/5 border border-white/30 hover:border-orange-200/60 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10"
             >
               
               <div className="w-75 h-16 flex items-center justify-center mb-6
-    rounded-2xl
+    rounded-6xl
     transition-all duration-300 ease-out
-    group-hover:scale-150
+    group-hover:scale-250
     group-hover:rotate-5">
                 <Image
                   src={feature.iconPath || "/placeholder.svg"}
@@ -59,8 +59,8 @@ export function FeaturesSection() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.name}</h3>
-              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-5">{feature.name}</h3>
+              <p className="text-gray-300 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

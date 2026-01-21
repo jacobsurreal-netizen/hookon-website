@@ -49,19 +49,24 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-br from-white/7 via-white/3 to-amber-30/50 -z-10" />
 
       {/* Animated background blobs */}
-      <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-orange-200 to-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob -z-10" />
-      <div className="absolute top-40 right-10 w-96 h-96 bg-gradient-to-br from-green-200 to-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000 -z-10" />
-      <div className="absolute -bottom-8 left-20 w-96 h-96 bg-gradient-to-br from-yellow-200 to-orange-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000 -z-10" />
+      <div className="absolute top-35 left-65 w-96 h-96 bg-gradient-to-br from-ember-200 to-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-14 animate-blob -z-10" />
+      <div className="absolute top-73 left-175 w-140 h-65 bg-gradient-to-br from-green-300 to-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-4 animate-blob animation-delay-2000 -z-10" />
+      <div className="absolute -bottom-8 left-40 w-96 h-96 bg-gradient-to-br from-ember-300 to-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000 -z-10" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         {/* Logo in hero */}
         <div className="mb-12 flex justify-center">
-          <img src="/images/hookon-logo.png" alt="hookon" className="h-[500px] object-contain" />
+          <img src="/images/hookon_logo.png" alt="hookon" className="h-[750px] object-contain" />
         </div>
+        
 
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 text-balance">{t.hero.title}</h1>
+        
+        <h1 className="glass-heading text-5xl md:text-6xl lg:text-8xl font-bold text-gray-200/15 mb-6 text-balance">
+  {t.hero.title}
+</h1>
 
-        <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto text-balance">{t.hero.subtitle}</p>
+
+        <p className="text-lg md:text-x2 text-gray-400/70 mb-10 max-w-2xl mx-auto text-balance">{t.hero.subtitle}</p>
       </div>
 
       {/* FeatureCardsRow component - updated features array with PNG icon paths */}

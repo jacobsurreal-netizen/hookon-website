@@ -32,12 +32,12 @@ export function BenefitsSection() {
   return (
     <section id="about" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-yellow-50/30 to-white -z-10" />
+      <div className="absolute inset-2 bg-gradient-to-b from-yellow-80/60 via-white/12 to-white/0 -z-10" />
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">{t.benefits.title}</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t.benefits.subtitle}</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-400/60 mb-4 text-balance">{t.benefits.title}</h2>
+          <p className="text-lg text-gray-300/70 max-w-2xl mx-auto">{t.benefits.subtitle}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -49,8 +49,8 @@ export function BenefitsSection() {
               className="
               relative
     rounded-[24px]
-    bg-gradient-to-b from-white/14 via-white/6 to-white/10
-    backdrop-blur-2xl
+    bg-gradient-to-b from-white/12 via-white/1 to-white/8
+    backdrop-blur-3xl
     border border-white/12
     ring-1 ring-inset ring-white/20
     shadow-[0_7px_12px_rgba(0,0,0,0.2)]
@@ -59,7 +59,7 @@ export function BenefitsSection() {
     group-hover:shadow-[0_28px_120px_rgba(0,0,0,0.8)]
     group-hover:-translate-y-1"
             >
-              <div className="w-12 h-12 mb-4 relative">
+              <div className="w-12 h-12 mb-6 relative">
                 <Image
                   src={benefit.iconPath || "/placeholder.svg"}
                   alt={benefit.iconAlt}
@@ -69,8 +69,8 @@ export function BenefitsSection() {
                 />
                 
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.name}</h3>
-              <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+              <h3 className="text-xl font-bold text-orange-500/70 mb-3">{benefit.name}</h3>
+              <p className="text-gray-300/80 leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>

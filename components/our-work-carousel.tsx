@@ -44,7 +44,7 @@ export function OurWorkCarousel() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % cards.length)
-    }, 5000)
+    }, 15000)
     return () => clearInterval(timer)
   }, [])
 
@@ -58,10 +58,12 @@ export function OurWorkCarousel() {
 
   return (
     <section id="work" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="absolute inset-0 border border-white/10 bg-black/40 bg-gradient-to-br from-orange-70/60 via-black/50 to-gray/70 backdrop-blur-2xl shadow-[0_0_60px_rgba(0,0,0,0.9)] ring-1 ring-white/20" />
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">{t.caseStudies.title}</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t.caseStudies.subtitle}</p>
+          <h2 className="behold-our-creation text-5xl md:text-6xl lg:text-9xl font-bold text-gray-200/15 mb-6 text-balance">{t.caseStudies.title} </h2>
+          <p className="text-lg text-gray-200/90 max-w-2xl mx-auto">{t.caseStudies.subtitle}</p>
+      
         </div>
 
         <div ref={containerRef} className="relative flex items-center justify-center min-h-96 perspective">
@@ -69,22 +71,22 @@ export function OurWorkCarousel() {
           <div className="flex gap-8 justify-center items-center w-full px-4">
             {visibleCards.map((card, idx) => {
               const isCenter = idx === 1
-              const scale = isCenter ? 1 : 0.85
-              const opacity = isCenter ? 1 : 0.6
+              const scale = isCenter ? 1 : 0.75
+              const opacity = isCenter ? 1 : 0.5
 
               return (
                 <div
                   key={card.id}
-                  className="relative transition-all duration-500 ease-out"
+                  className="relative transition-all duration-2500 ease-out"
                   style={{
                     transform: `scale(${scale}) rotateY(${cardRotations[idx]}deg)`,
                     opacity: opacity,
                   }}
                 >
                   <div
-                    className={`relative h-80 w-64 rounded-3xl backdrop-blur-xl bg-gradient-to-br from-white/50 to-white/30 border-[3px] ${
+                    className={`relative h-80 w-64 rounded-3xl backdrop-blur-x4 bg-gradient-to-br from-white/5 to-white/10 border-[3px] ${
                       isCenter
-                        ? "border-orange-400/80 shadow-2xl shadow-orange-500/30"
+                        ? "border-orange-400/40 shadow-2xl shadow-orange-500/30"
                         : "border-white/40 hover:border-orange-200/60"
                     } flex flex-col items-center justify-center overflow-hidden group transition-all duration-300`}
                   >
@@ -97,15 +99,15 @@ export function OurWorkCarousel() {
                         <Image
                           src="/icons/hookon-chain.png"
                           alt="hookon logo icon"
-                          width={64}
-                          height={64}
+                          width={80}
+                          height={80}
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <p className="text-lg font-semibold text-gray-900 mb-4">
+                      <p className="text-lg font-semibold text-gray-400/80 mb-4">
                         {t.caseStudies.project} {card.id}
                       </p>
-                      <button className="px-6 py-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-medium hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300">
+                      <button className="px-6 py-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-800 text-white font-medium hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300">
                         {t.caseStudies.comingSoon}
                       </button>
                     </div>
@@ -118,10 +120,10 @@ export function OurWorkCarousel() {
           {/* Navigation buttons */}
           <button
             onClick={handlePrev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/40 backdrop-blur-md border border-white/60 hover:bg-white/60 transition-all duration-300 group"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/30 backdrop-blur-md border border-white/50 hover:bg-white/15 transition-all duration-300 group"
           >
             <svg
-              className="w-6 h-6 text-gray-800 group-hover:text-orange-600 transition-colors"
+              className="w-6 h-6 text-gray-900 group-hover:text-orange-600 transition-colors"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -132,10 +134,10 @@ export function OurWorkCarousel() {
 
           <button
             onClick={handleNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/40 backdrop-blur-md border border-white/60 hover:bg-white/60 transition-all duration-300 group"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/30 backdrop-blur-md border border-white/50 hover:bg-white/15 transition-all duration-300 group"
           >
             <svg
-              className="w-6 h-6 text-gray-800 group-hover:text-orange-600 transition-colors"
+              className="w-6 h-6 text-gray-900 group-hover:text-orange-600 transition-colors"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

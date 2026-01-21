@@ -67,7 +67,7 @@ export const translations = {
       successMessage: "Thank you! We'll get back to you soon.",
     },
     footer: {
-      tagline: "AI-Powered Advertising & Branding Studio",
+      tagline: "AI-Powered Advertising Studio",
       copyright: "© 2026 hookon. All rights reserved.",
       contact: "Contact",
       email: "hello@hookon.io",
@@ -141,7 +141,7 @@ export const translations = {
       successMessage: "Děkujeme! Brzy se vám ozveme.",
     },
     footer: {
-      tagline: "Studio pro AI-řízené reklamy a branding",
+      tagline: "  ____ h o o k o n ____",
       copyright: "© 2026 hookon. Všechna práva vyhrazena.",
       contact: "Kontakt",
       email: "hello@hookon.io",
