@@ -8,12 +8,12 @@ export function Footer() {
   const t = translations[language]
 
   return (
-    <footer className="relative border-t border-ember/25 backdrop-blur-xl bg-gradient-to-b from-white/50 to-white/15">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid md:grid-cols-4 gap-12 mb-5">
+    <footer className="relative border-t border-white/25 backdrop-blur-xl bg-gradient-to-b from-white/50 to-white/15">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid md:grid-cols-4 gap-25 mb-5">
           {/* Brand */}
           <div>
-            <img src="/images/hookon-logo.png" alt="hookon" className="h-25 mb-0" />
+            <img src="/images/hookon-logo.png" alt="hookon" className="h-12 mb-0" />
             <p className="text-gray-900 text-sm">{t.footer.tagline}</p>
           </div>
 

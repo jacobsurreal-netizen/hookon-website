@@ -4,8 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(100% 0.00011 271.152);
+  --foreground: oklch(0% 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -18,8 +18,8 @@
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --destructive: oklch(0% 0 0);
+  --destructive-foreground: oklch(16.497% 0.00167 16.71);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
@@ -40,7 +40,7 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --background: oklch(14.479% 0.00002 271.152);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.145 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -136,28 +136,37 @@
     pointer-events: none;
   }
 }
+@media (max-width: 768px) {
+  body::before {
+    /* jednodušší / jiná animace na mobilech */
+    animation: heroFisheyeMobile 8s ease-in-out infinite;
+    /* případně slabší blur nebo žádný */
+    filter: blur(1px);
+  }
 
+  @keyframes heroFisheyeMobile {
+    0%, 100% { transform: scale(1.01); }
+    50%      { transform: scale(1.03); }
+  }
+}
 
 
 
 @keyframes heroFisheye {
   0%, 100% {
-    transform: scale(1.01);
-    filter: blur(2px);
+    transform: scale(1.01) translate3d(0, 0, 0);
   }
   25% {
-    transform: scale(1.03) translate3d(0, -8px, 0);
-    filter: blur(1.5px) contrast(1.05);
+    transform: scale(1.03) translate3d(25px, -32px, 0);
   }
   50% {
-    transform: scale(1.08);
-    filter: blur(2.5px) contrast(1.1);
+    transform: scale(1.06) translate3d(-32px, -67px, 0);
   }
   75% {
-    transform: scale(1.06) translate3d(0, 6px, 0);
-    filter: blur(2px);
+    transform: scale(1.06) translate3d(19px, 6px, 0);
   }
 }
+
 
 .glass-heading {
   text-shadow:
@@ -167,26 +176,26 @@
 
 .glass-heading {
   position: relative;
-  background-image: linear-gradient(120deg, #ff7a00, #b12900);
+  background-image: linear-gradient(120deg, #ffffffe3, #8ff4ffe1);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;               /* vyplň textu */
   -webkit-text-stroke-width: 2px; /* tloušťka obrysu */
   text-shadow:
-    0 0 16px rgba(255, 51, 0, 0.35),
-    0 0 30px rgba(255, 102, 0, 0.15); /* lehký glow */
+    0 0 16px rgba(255, 255, 255, 0.600),
+    0 0 30px rgba(150, 229, 600, 0.600); /* lehký glow */
 }
 
 .behold-our-creation {
   position: relative;
-  background-image: linear-gradient(120deg, #57575761, #bdbdbd53);
+  background-image: linear-gradient(120deg, #ffffff61, #ffffff53);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;               /* vyplň textu */
   -webkit-text-stroke-width: 0.5px; /* tloušťka obrysu */
-  -webkit-text-stroke-color: rgba(255, 145, 0, 0.721); /* jemný světlý outline */
+  -webkit-text-stroke-color: rgba(185, 239, 255, 0.100); /* jemný světlý outline */
   text-shadow:
-    0 0 5px rgba(228, 225, 222, 0.679),
-    0 0 20px rgb(255, 81, 0); /* lehký glow */
+    0 0 5px rgba(255, 255, 255, 0.628),
+    0 0 20px rgba(113, 209, 236, 0.523); /* lehký glow */
 }
 

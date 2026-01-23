@@ -10,12 +10,12 @@ export function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-gradient-to-br from-ember/30 via-orange/15 to-yellow-50/30 border-b border-white/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-15">
+          <div className="flex items-center gap-25">
             {/* Logo */}
             <div className="flex items-center gap-2 flex-shrink-0">
-              <img src="/images/hookon-logo.png" alt="hookon logo" className="h-40" />
+              <img src="/images/hookon-logo.png" alt="hookon logo" className="h-12" />
             </div>
 
             {/* Nav Links */}

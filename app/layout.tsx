@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { Footer } from "@/components/footer"
+import { LanguageProvider } from "@/lib/language-context"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -33,13 +35,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans antialiased`}>
-        {children}
+      <body className="font-sans antialiased min-h-screen flex flex-col">
+        <LanguageProvider>
+          <main className="flex-1">
+            {children}
+          </main>
+
+          <Footer />
+        </LanguageProvider>
+
         <Analytics />
       </body>
     </html>

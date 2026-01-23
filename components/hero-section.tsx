@@ -46,12 +46,7 @@ export function HeroSection() {
 
 
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/7 via-white/3 to-amber-30/50 -z-10" />
-
-      {/* Animated background blobs */}
-      <div className="absolute top-35 left-65 w-96 h-96 bg-gradient-to-br from-ember-200 to-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-14 animate-blob -z-10" />
-      <div className="absolute top-73 left-175 w-140 h-65 bg-gradient-to-br from-green-300 to-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-4 animate-blob animation-delay-2000 -z-10" />
-      <div className="absolute -bottom-8 left-40 w-96 h-96 bg-gradient-to-br from-ember-300 to-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-white/7 via-white/3 to-amber-80/50 -z-10" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         {/* Logo in hero */}
@@ -61,7 +56,7 @@ export function HeroSection() {
         
 
         
-        <h1 className="glass-heading text-5xl md:text-6xl lg:text-8xl font-bold text-gray-200/15 mb-6 text-balance">
+        <h1 className="glass-heading text-8xl md:text-6xl lg:text-8xl font-bold text-gray-200/15 mb-6 text-balance">
   {t.hero.title}
 </h1>
 

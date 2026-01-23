@@ -17,15 +17,15 @@ export default function Home() {
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
+
+    const x = e.clientX - rect.right;
     const y = e.clientY - rect.top;
-    const centerX = rect.width / 8;
-    const centerY = rect.height / 8;
+    const centerX = rect.width / 1.5;
+    const centerY = rect.height / 0.03;
 
-    const rotateX = (y - centerY) / 700;
-    const rotateY = (centerX - x) / 700;
-
-    
+    const maxTilt = 0.03; // mírný rozsah
+    const rotateX = ((y - centerY) / centerY) * maxTilt;
+    const rotateY = ((centerX - x) / centerX) * maxTilt;
 
     setTilt({ x: rotateX, y: rotateY });
   };
@@ -35,37 +35,52 @@ export default function Home() {
   };
 
   return (
-
     <LanguageProvider>
       <main className="min-h-screen">
-  <Navigation />
-  
-  <div className="px-4 sm:px-6 lg:px-10 py-8 sm:py-45">
-    <div>
+        <Navigation />
 
-          </div>
+        <div className="px-4 sm:px-6 lg:px-50 py-8 sm:py-45">
+          <div />
 
-    <div
+          <div
+            className="
+              relative
+              max-w-6xl mx-auto
+              rounded-[32px]
+              bg-gradient-to-b from-yellow/12 via-orange/8 to-yellow/17
+              backdrop-blur-5xl
+              border border-white/30
+              ring-12 ring-inset ring-white/9
+              overflow-hidden
+              transition-all duration-300
+              shadow-[0_30px_80px_rgba(0,0,0,0.80)]   /* base shadow */
+              hover:shadow-[0_20px_80px_rgba(0,0,0,0.80)] /* slabší na hover */
+              transition-shadow duration-2500 ease-in
+              transition-shadow duration-2300 ease-out  
+            "
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              transform: `perspective(300px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
+              transition: "transform 0.2s ease-out",
+            }}
+          >
+            {/* Glass tablet ... */}
+                <div
       className="
     relative
     max-w-6xl mx-auto
     rounded-[32px]
-    bg-gradient-to-b from-yellow/12 via-orange/8 to-ember/17
-    backdrop-blur-5xl
+    bg-gradient-to-b from-black/12 via-black/35 to-black/47
+    backdrop-blur-[5px]
     border border-white/15
     ring-7 ring-inset ring-white/7
     overflow-hidden
     transition-all duration-300
-hover:ring-ember/15
+hover:ring-gray/15
 hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
 
       "
-       onMouseMove={handleMouseMove}
-  onMouseLeave={handleMouseLeave}
-  style={{
-    transform: `perspective(7000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
-    transition: "transform 0.25s ease-out",
-  }}
     >
   
   {/* Glass tablet */}
@@ -74,8 +89,8 @@ hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
       relative
       max-w-6xl mx-auto
       rounded-[32px]
-      bg-gradient-to-b from-ember/16 via-orange/6 to-ember/10
-      backdrop-blur-[60px]
+      bg-gradient-to-b from-yellow/16 via-orange/6 to-yellow/10
+      backdrop-blur-[80px]
       border border-white/15
       ring-15 ring-inset ring-white/25
       shadow-[0_40px_160px_rgba(0,0,0,0.6)]
@@ -93,7 +108,7 @@ hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
   className="
     pointer-events-none
     absolute -top-1/3 left-[-10%] w-[120%] h-1/2
-    bg-gradient-to-b from-ember/80 via-white/10 to-transparent
+    bg-gradient-to-b from-white/80 via-white/10 to-transparent
     opacity-12
   "
 />
@@ -102,8 +117,8 @@ hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
     aria-hidden="true"
     className="
       pointer-events-none
-      absolute inset-x-[-10%] -top-[40%] h-[60%]
-      bg-gradient-to-b from-orange/70 via-yellow/10 to-transparent
+      absolute inset-x-[-10%] -top-[40%] h-[90%]
+      bg-gradient-to-b from-white/70 via-white/10 to-transparent
       opacity-15
       "
   />
@@ -111,7 +126,7 @@ hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
   aria-hidden="true"
   className="
     pointer-events-none
-    absolute bottom-[-45%] left-1/5 w-1/2 h-1/3
+    absolute bottom-[-75%] left-1/5 w-1/2 h-1/3
     bg-gradient-radial from-white/75 via-transparent to-transparent
     opacity-30
   "
@@ -128,12 +143,15 @@ hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
       <CTASection />
       <OurWorkCarousel />
       <ContactCtaSection />
+      <footer />
     </div>
   </div>
 
   <Footer />
-</main>
+
+        </div>
+      </main>
     </LanguageProvider>
-  )
+  );
 }
 
