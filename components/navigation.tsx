@@ -9,32 +9,53 @@ export function Navigation() {
   const t = translations[language]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-gradient-to-br from-ember/30 via-orange/15 to-yellow-50/30 border-b border-white/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
-        <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-10">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md
+                    bg-gradient-to-br from-ember/30 via-orange/15 to-yellow-50/30
+                    border-b border-white/20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-5 lg:px-6">
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
+          {/* Logo + desktop odkazy */}
+          <div className="flex items-center gap-4 sm:gap-6 md:gap-10">
             {/* Logo */}
-            <div className="flex items-absolute gap-15 flex-shrink-0">
-              <img src="/images/hookon-logo.png" alt="hookon logo" className="h-8" />
+            <div className="flex items-center flex-shrink-0">
+              <img
+                src="/images/hookon-logo.png"
+                alt="hookon logo"
+                className="h-7 sm:h-8 md:h-9"
+              />
             </div>
 
-            {/* Nav Links */}
-            <div className="hidden md:flex items-center gap-15">
-              <a href="#about" className="text-gray-700 hover:text-orange-500 transition text-sm font-medium">
+            {/* Nav Links – skryté na mobilu, viditelné od md */}
+            <div className="hidden md:flex items-center gap-8">
+              <a
+                href="#about"
+                className="text-xs sm:text-sm text-gray-700 hover:text-orange-500 transition font-medium"
+              >
                 {t.nav.about}
               </a>
-              <a href="#services" className="text-gray-700 hover:text-orange-500 transition text-sm font-medium">
+              <a
+                href="#services"
+                className="text-xs sm:text-sm text-gray-700 hover:text-orange-500 transition font-medium"
+              >
                 {t.nav.services}
               </a>
-              <a href="#work" className="text-gray-700 hover:text-orange-500 transition text-sm font-medium">
+              <a
+                href="#work"
+                className="text-xs sm:text-sm text-gray-700 hover:text-orange-500 transition font-medium"
+              >
                 {t.nav.work}
               </a>
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          {/* Pravá strana: přepínač jazyka + CTA */}
+          <div className="flex items-center gap-2 sm:gap-3">
             <LanguageToggle />
-            <button className="hidden sm:block px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full hover:shadow-lg hover:shadow-orange-500/25 transition-all font-medium text-sm">
+            <button className="hidden sm:inline-flex px-4 sm:px-5 py-1.5 sm:py-2
+                               bg-gradient-to-r from-orange-500 to-orange-600
+                               text-white rounded-full
+                               hover:shadow-lg hover:shadow-orange-500/25
+                               transition-all font-medium text-xs sm:text-sm">
               {t.nav.contact}
             </button>
           </div>
