@@ -219,7 +219,9 @@ export function OurWorkCarousel() {
       {/* Overlay s velkým náhledem */}
       {selectedCard && (
         <div
-          className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-md flex items-start justify-center px-4 pt-937"
+        className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-md
+               flex items-start justify-center px-4
+               pt-20 sm:pt-24 md:pt-32 lg:pt-937"
 
           onClick={() => setSelectedCard(null)}
         >
