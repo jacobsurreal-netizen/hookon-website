@@ -134,7 +134,7 @@ export const translations = {
       title: "Kontaktujte nás",
       subtitle: "Pojďme si promluvit o tom, jak můžeme transformovat váš marketing pomocí AI",
       namePlaceholder: "Vaše jméno",
-      emailPlaceholder: "vás@email.com",
+      emailPlaceholder: "váš@email.com",
       messagePlaceholder: "Napište svou zprávu…",
       button: "Odeslat zprávu",
       sending: "Odesílání...",

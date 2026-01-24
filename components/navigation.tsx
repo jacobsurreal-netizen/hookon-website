@@ -12,21 +12,21 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-gradient-to-br from-ember/30 via-orange/15 to-yellow-50/30 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-25">
+          <div className="flex items-center gap-10">
             {/* Logo */}
-            <div className="flex items-center gap-2 flex-shrink-0">
-              <img src="/images/hookon-logo.png" alt="hookon logo" className="h-12" />
+            <div className="flex items-absolute gap-15 flex-shrink-0">
+              <img src="/images/hookon-logo.png" alt="hookon logo" className="h-8" />
             </div>
 
             {/* Nav Links */}
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#about" className="text-gray-400 hover:text-orange-500 transition text-sm font-medium">
+            <div className="hidden md:flex items-center gap-15">
+              <a href="#about" className="text-gray-700 hover:text-orange-500 transition text-sm font-medium">
                 {t.nav.about}
               </a>
-              <a href="#services" className="text-gray-400 hover:text-orange-500 transition text-sm font-medium">
+              <a href="#services" className="text-gray-700 hover:text-orange-500 transition text-sm font-medium">
                 {t.nav.services}
               </a>
-              <a href="#work" className="text-gray-400 hover:text-orange-500 transition text-sm font-medium">
+              <a href="#work" className="text-gray-700 hover:text-orange-500 transition text-sm font-medium">
                 {t.nav.work}
               </a>
             </div>

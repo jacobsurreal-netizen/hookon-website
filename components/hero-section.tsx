@@ -56,12 +56,12 @@ export function HeroSection() {
         
 
         
-        <h1 className="glass-heading text-8xl md:text-6xl lg:text-8xl font-bold text-gray-200/15 mb-6 text-balance">
+        <h1 className="glass-heading text-8xl md:text-6xl lg:text-8xl font-bold text-gray-800/15 mb-6 text-balance">
   {t.hero.title}
 </h1>
 
 
-        <p className="text-lg md:text-x2 text-gray-400/70 mb-10 max-w-2xl mx-auto text-balance">{t.hero.subtitle}</p>
+        <p className="text-lg md:text-x2 font-bold text-slate-900/70 mb-10 max-w-2xl mx-auto text-balance">{t.hero.subtitle}</p>
       </div>
 
       {/* FeatureCardsRow component - updated features array with PNG icon paths */}

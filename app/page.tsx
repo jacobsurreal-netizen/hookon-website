@@ -8,7 +8,6 @@ import { BenefitsSection } from "@/components/benefits-section"
 import { LazyVideoSection } from "@/components/lazy-video-section"
 import { ContactCtaSection } from "@/components/contact-cta-section"
 import { CTASection } from "@/components/cta-section"
-import { Footer } from "@/components/footer"
 import { OurWorkCarousel } from "@/components/our-work-carousel"
 import React, { useState } from "react";
 
@@ -71,13 +70,13 @@ export default function Home() {
     relative
     max-w-6xl mx-auto
     rounded-[32px]
-    bg-gradient-to-b from-black/12 via-black/35 to-black/47
+    bg-gradient-to-br from-amber-700/40 via-blue-400/30 to-orange-500/50
     backdrop-blur-[5px]
     border border-white/15
     ring-7 ring-inset ring-white/7
     overflow-hidden
     transition-all duration-300
-hover:ring-gray/15
+hover:ring-gray/50
 hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
 
       "
@@ -143,11 +142,8 @@ hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
       <CTASection />
       <OurWorkCarousel />
       <ContactCtaSection />
-      <footer />
     </div>
   </div>
-
-  <Footer />
 
         </div>
       </main>

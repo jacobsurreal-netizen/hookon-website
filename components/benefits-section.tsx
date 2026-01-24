@@ -32,12 +32,12 @@ export function BenefitsSection() {
   return (
     <section id="about" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       
-      <div className="absolute inset-2 bg-gradient-to-b from-yellow-80/60 via-white/12 to-white/0 -z-10" />
+      <div className="absolute inset-2 bg-gradient-to-tr from-slate-800/50 via-white/40 to-slate-600/70 -z-10" />
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-400/60 mb-4 text-balance">{t.benefits.title}</h2>
-          <p className="text-lg text-gray-300/70 max-w-2xl mx-auto">{t.benefits.subtitle}</p>
+          <h2 className="text-4xl md:text-6xl font-bold text-slate-50/90 mb-4 text-balance">{t.benefits.title}</h2>
+          <p className="text-lg font-bold text-orange-500/80 max-w-2xl mx-auto">{t.benefits.subtitle}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -69,8 +69,8 @@ export function BenefitsSection() {
                 />
                 
               </div>
-              <h3 className="text-xl font-bold text-orange-500/70 mb-3">{benefit.name}</h3>
-              <p className="text-gray-300/80 leading-relaxed">{benefit.description}</p>
+              <h3 className="text-xl font-bold text-white/90 mb-5">{benefit.name}</h3>
+              <p className="font-bold text-gray-800/80 leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>

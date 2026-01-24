@@ -50,10 +50,10 @@ export function LazyVideoSection({
     >
       <div className="absolute rounded-[32px] inset-0 border border-white/10 bg-black/40 bg-gradient-to-br from-orange-70/60 via-black/70 to-gray/90 backdrop-blur-2xl shadow-[0_0_60px_rgba(0,0,0,0.9)] ring-1 ring-white/8" />
       <div className="max-w-5xl mx-auto text-center mb-10">
-        <h2 className="behold-our-creation text-3xl md:text-4xl lg:text-8xl font-bold text-gray-500/15 mb-8 text-balance">
+        <h2 className="behold-our-creation text-3xl md:text-4xl lg:text-8xl font-bold text-white mb-8 text-balance">
           {title}
         </h2>
-        <p className="text-lg text-white/95">{subtitle}</p>
+
       </div>
 
       <div className="aspect-video max-w-5xl mx-auto rounded-3xl overflow-hidden backdrop-blur-xl bg-black/70 border border-white/20 shadow-[0_24px_80px_rgba(0,0,0,0.65)]">
@@ -78,7 +78,7 @@ export function LazyVideoSection({
               Your browser does not support the video tag.
             </video>
           ) : (
-            <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+            <div className="w-full h-full flex items-center justify-center text-white text-sm">
               Loading preview…
             </div>
           )}

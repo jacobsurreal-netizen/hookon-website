@@ -58,11 +58,11 @@ export function OurWorkCarousel() {
 
   return (
     <section id="work" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute inset-0 border border-white/10 bg-black/40 bg-gradient-to-br from-orange-70/60 via-black/50 to-gray/70 backdrop-blur-2xl shadow-[0_0_60px_rgba(0,0,0,0.9)] ring-1 ring-white/20" />
-      <div className="max-w-7xl mx-auto">
+      <div className="absolute inset-0 border border-white/10 bg-black/40 bg-gradient-to-br from-orange-70/60 via-black/50 to-gray/70 backdrop-blur-2xl shadow-[0_0_60px_rgba(0,0,0,1.5)] ring-1 ring-white/20" />
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="behold-our-creation text-5xl md:text-6xl lg:text-9xl font-bold text-gray-500/15 mb-6 text-balance">{t.caseStudies.title} </h2>
-          <p className="text-lg text-gray-50 max-w-2xl mx-auto">{t.caseStudies.subtitle}</p>
+          <h2 className="behold-our-creation text-5xl md:text-6xl lg:text-9xl font-bold text-white-900/50 mb-6 text-balance">{t.caseStudies.title} </h2>
+          <p className="text-lg font-bold text-black max-w-2xl mx-auto">{t.caseStudies.subtitle}</p>
       
         </div>
 

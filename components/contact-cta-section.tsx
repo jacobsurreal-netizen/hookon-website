@@ -53,8 +53,8 @@ export function ContactCtaSection() {
       
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-300/50 mb-4 text-balance">{t.contact.title}</h2>
-          <p className="text-lg text-gray-400/60 text-pretty">{t.contact.subtitle}</p>
+          <h2 className="text-4xl sm:text-6xl font-bold text-slate-100/90 mb-4 text-balance">{t.contact.title}</h2>
+          <p className="text-lg text-gray-900/70 text-pretty">{t.contact.subtitle}</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -67,7 +67,7 @@ export function ContactCtaSection() {
               onChange={handleChange}
               placeholder={t.contact.namePlaceholder}
               required
-              className="px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-orange-500/80 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition"
+              className="px-4 py-3 rounded-xl bg-black/60 border border-white/70 text-orange-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition"
             />
 
             {/* Email Input */}
@@ -78,7 +78,7 @@ export function ContactCtaSection() {
               onChange={handleChange}
               placeholder={t.contact.emailPlaceholder}
               required
-              className="px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-orange-500/80 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition"
+              className="px-4 py-3 rounded-xl bg-black/60 border border-white/70 text-orange-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition"
             />
           </div>
 
@@ -90,14 +90,14 @@ export function ContactCtaSection() {
             placeholder={t.contact.messagePlaceholder}
             required
             rows={5}
-            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-orange-500/80 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition resize-none"
+            className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/70 text-orange-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition resize-none"
           />
 
           {/* Submit Button */}
           <div className="flex justify-center pt-4">
             <button
               type="submit"
-              className="px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full hover:shadow-lg hover:shadow-orange-500/25 transition-all font-semibold"
+              className="px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full hover:shadow-lg hover:shadow-orange-500/65 transition-all font-semibold"
             >
               {submitted ? t.contact.sending : t.contact.button}
             </button>

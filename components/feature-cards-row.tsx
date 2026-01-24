@@ -65,7 +65,7 @@ export function FeatureCardsRow({ heroCta, heroCta2, features }: FeatureCardsRow
 >
 
               {/* Inner subtle glow using ring */}
-              <div className="absolute inset-0.5 rounded-3xl bg-gradient-to-br from-white/8 to-transparent opacity-0 group-hover:opacity-60 transition-opacity" />
+              <div className="absolute inset-0.5 rounded-3xl bg-gradient-to-tl from-white/50 to-transparent opacity-0 group-hover:opacity-60 transition-opacity" />
 
               <div className="relative">
                 <div className="mb-4 w-12 h-12 relative">
@@ -79,10 +79,10 @@ export function FeatureCardsRow({ heroCta, heroCta2, features }: FeatureCardsRow
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-orange-600/80 mb-5">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-orange-600/90 mb-8">{feature.title}</h3>
 
                 {/* Description */}
-                <p className="text-sm text-gray-400 leading-relaxed">{feature.description}</p>
+                <p className="text-sm text-gray-900 leading-relaxed">{feature.description}</p>
               </div>
             </div>
           </div>
