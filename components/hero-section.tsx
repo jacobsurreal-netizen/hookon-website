@@ -38,34 +38,36 @@ export function HeroSection() {
   ]
 
   return (
-    
     <section 
-    className="relative min-h-screen flex flex-col items-center justify-center pt-10 pb-10"
-     // @ts-ignore
->
-
-
+      className="relative min-h-screen flex flex-col items-center justify-center py-8 sm:py-12 md:py-16 lg:py-20"
+      // @ts-ignore
+    >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/7 via-white/3 to-amber-80/50 -z-10" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-        {/* Logo in hero */}
-        <div className="mb-12 flex justify-center">
-          <img src="/images/hookon_logo.png" alt="hookon" className="h-[750px] object-contain" />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center w-full">
+        {/* Logo in hero - responsive heights */}
+        <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 flex justify-center">
+          <img 
+            src="/images/hookon_logo.png" 
+            alt="hookon" 
+            className="h-40 sm:h-40 md:h-60 lg:h-80 object-contain" 
+          />
         </div>
-        
 
-        
-        <h1 className="glass-heading text-8xl md:text-6xl lg:text-8xl font-bold text-gray-800/15 mb-6 text-balance">
-  {t.hero.title}
-</h1>
+        {/* H1 - mobile-first responsive sizing */}
+        <h1 className="glass-heading text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-800/15 mb-4 sm:mb-5 md:mb-6 lg:mb-8 text-balance">
+          {t.hero.title}
+        </h1>
 
-
-        <p className="text-lg md:text-x2 font-bold text-slate-900/70 mb-10 max-w-2xl mx-auto text-balance">{t.hero.subtitle}</p>
+        {/* Subtitle - responsive text size and margin */}
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-slate-900/70 mb-8 sm:mb-10 md:mb-12 lg:mb-16 max-w-2xl mx-auto text-balance">
+          {t.hero.subtitle}
+        </p>
       </div>
 
-      {/* FeatureCardsRow component - updated features array with PNG icon paths */}
-      <div className="w-full max-w-6xl mx-auto px-4">
+      {/* FeatureCardsRow component */}
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FeatureCardsRow heroCta={t.hero.cta1} features={features} />
       </div>
     </section>
