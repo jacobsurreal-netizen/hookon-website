@@ -221,7 +221,7 @@ export function OurWorkCarousel() {
         <div
         className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-md
                flex items-start justify-center px-4
-               pt-300 sm:pt-24 md:pt-32 lg:pt-937"
+               pt-400 sm:pt-24 md:pt-32 lg:pt-937"
 
           onClick={() => setSelectedCard(null)}
         >
