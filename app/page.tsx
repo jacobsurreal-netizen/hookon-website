@@ -38,7 +38,7 @@ export default function Home() {
       <main className="min-h-screen">
         <Navigation />
 
-        <div className="px-4 sm:px-6 lg:px-50 py-8 sm:py-45">
+        <div className="px-4 sm:px-6 lg:px-50 pt-22 sm:pt-48 pb-10 sm:pb-20">
           <div />
 
           <div
@@ -55,15 +55,8 @@ export default function Home() {
               shadow-[0_30px_80px_rgba(0,0,0,0.80)]   /* base shadow */
               hover:shadow-[0_20px_80px_rgba(0,0,0,0.80)] /* slabší na hover */
               transition-shadow duration-2500 ease-in
-              transition-shadow duration-2300 ease-out  
-            "
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            style={{
-              transform: `perspective(300px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
-              transition: "transform 0.2s ease-out",
-            }}
-          >
+              transition-shadow duration-2300 ease-out">
+            
             {/* Glass tablet ... */}
                 <div
       className="

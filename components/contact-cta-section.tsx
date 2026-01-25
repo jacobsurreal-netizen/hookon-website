@@ -49,15 +49,27 @@ export function ContactCtaSection() {
 
   return (
     
-    <section className="py-20 sm:py-24 border-t border-white/20">
+    <section className="py-20 sm:py-24 border-t border-white/20 px-4 sm:px-0">
       
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-6xl font-bold text-slate-100/90 mb-4 text-balance">{t.contact.title}</h2>
-          <p className="text-lg text-gray-900/70 text-pretty">{t.contact.subtitle}</p>
+          <h2 className="text-4xl sm:text-6xl font-bold text-slate-100/90 mb-4 text-balance">
+          {t.contact.title}
+          </h2>
+          <p className="text-lg text-gray-900/70 text-pretty">
+          {t.contact.subtitle}
+          </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+         {/* MOBILE-RESPONSIVE WRAPPER */}
+      <div className="w-full max-w-md mx-auto sm:max-w-none">
+        
+      </div>
+
+        <form onSubmit={handleSubmit} className="space-y-6 max-w-md mx-auto 
+              /* mobil */
+              sm:max-w-none sm:mx-0">
+                
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Name Input */}
             <input

@@ -45,7 +45,7 @@ export function HeroSection() {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/7 via-white/3 to-amber-80/50 -z-10" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center w-full">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-30 text-center flex flex-col items-center w-full">
         {/* Logo in hero - responsive heights */}
         <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 flex justify-center">
           <img 
@@ -56,7 +56,7 @@ export function HeroSection() {
         </div>
 
         {/* H1 - mobile-first responsive sizing */}
-        <h1 className="glass-heading text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-800/15 mb-4 sm:mb-5 md:mb-6 lg:mb-8 text-balance">
+        <h1 className="glass-heading text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-800/15 mb-4 sm:mb-5 md:mb-6 lg:mb-8 text-balance">
           {t.hero.title}
         </h1>
 

@@ -9,7 +9,7 @@ export function CTASection() {
 
   return (
     <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute inset-4 bg-gradient-to-br from-orange/60 via-white/15 to-green/40 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-orange/60 via-white/15 to-green/40 -z-10" />
 
       {/* Animated blobs */}
       <div className="absolute top-30 right-0 w-96 h-96 bg-gradient-to-bl from-orange-500/40 to-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob -z-10" />

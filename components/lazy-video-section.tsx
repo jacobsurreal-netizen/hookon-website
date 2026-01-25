@@ -48,7 +48,7 @@ export function LazyVideoSection({
       ref={containerRef}
       className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
-      <div className="absolute rounded-[32px] inset-0 border border-white/10 bg-black/40 bg-gradient-to-br from-orange-70/60 via-black/70 to-gray/90 backdrop-blur-2xl shadow-[0_0_60px_rgba(0,0,0,0.9)] ring-1 ring-white/8" />
+      <div className="absolute inset-0 border border-white/60 bg-black/40 bg-gradient-to-br from-orange-70/60 via-black/70 to-gray/90 backdrop-blur-2xl shadow-[0_0_60px_rgba(0,0,0,0.9)] ring-1 ring-white/8" />
       <div className="max-w-5xl mx-auto text-center mb-10">
         <h2 className="behold-our-creation text-3xl md:text-4xl lg:text-8xl font-bold text-white mb-8 text-balance">
           {title}

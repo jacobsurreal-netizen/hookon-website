@@ -13,7 +13,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-5">
           {/* Brand */}
           <div>
-            <img src="/images/hookon-logo.png" alt="hookon" className="h-12 mb-0" />
+            <img src="/images/hookon-logo.png" alt="hookon" className="h-8 mb-0" />
             <p className="text-gray-900 text-sm">{t.footer.tagline}</p>
           </div>
 
