@@ -57,7 +57,7 @@ export function ContactCtaSection() {
           <p className="text-lg text-gray-900/70 text-pretty">{t.contact.subtitle}</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Name Input */}
             <input
