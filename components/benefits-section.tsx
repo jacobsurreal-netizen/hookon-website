@@ -12,14 +12,14 @@ export function BenefitsSection() {
     {
       name: t.benefits.benefit1.name,
       description: t.benefits.benefit1.description,
-      iconPath: "/icons/performance.png",
-      iconAlt: "Performance icon",
+      iconPath: "/icons/speed.png",
+      iconAlt: "Speed icon",
     },
     {
       name: t.benefits.benefit2.name,
       description: t.benefits.benefit2.description,
-      iconPath: "/icons/speed.png",
-      iconAlt: "Speed icon",
+      iconPath: "/icons/performance.png",
+      iconAlt: "Performance icon",
     },
     {
       name: t.benefits.benefit3.name,
@@ -37,7 +37,9 @@ export function BenefitsSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-slate-50/90 mb-4 text-balance">{t.benefits.title}</h2>
-          <p className="text-lg font-bold text-orange-500/80 max-w-2xl mx-auto">{t.benefits.subtitle}</p>
+          <p className="mt-10 text-lg font-bold text-orange-500/80 max-w-2xl mx-auto">{t.benefits.subtitle1}</p>
+          <p className="mt-5 text-lg font-bold text-slate-800/50 max-w-2xl mx-auto">{t.benefits.subtitle2}</p>
+          <h3 className="mt-12 text-4xl md:text-6xl font-bold text-slate-50/90 mb-4 text-balance">{t.benefits.title1}</h3>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -59,7 +61,7 @@ export function BenefitsSection() {
     group-hover:shadow-[0_28px_120px_rgba(0,0,0,0.8)]
     group-hover:-translate-y-1"
             >
-              <div className="w-12 h-12 mb-6 relative">
+              <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <Image
                   src={benefit.iconPath || "/placeholder.svg"}
                   alt={benefit.iconAlt}
@@ -69,7 +71,7 @@ export function BenefitsSection() {
                 />
                 
               </div>
-              <h3 className="text-xl font-bold text-white/90 mb-5">{benefit.name}</h3>
+              <h3 className="text-xl font-bold text-white/90 mb-5 mx-auto text-center flex flex-col items-center w-full">{benefit.name}</h3>
               <p className="font-bold text-gray-800/80 leading-relaxed">{benefit.description}</p>
             </div>
           ))}

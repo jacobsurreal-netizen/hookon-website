@@ -11,64 +11,75 @@ export function HeroSection() {
     {
       iconPath: "/icons/ai-driven-ads.png",
       iconAlt: "AI-Driven Ads icon",
-      title: language === "en" ? "AI-Driven Ads" : "AI-Řízená Reklama",
+      title: language === "en" ? "Audit & Strategy:" : "Audit & strategie:",
       description:
         language === "en"
-          ? "Drive engagement with smart, targeted AI-driven ads."
-          : "Zvyšte engagement s chytrými, cílenými AI-řízenými reklamami.",
+          ? "We identify where AI can immediately reduce cost and increase output."
+          : "Identifikujeme oblasti, kde může umělá inteligence okamžitě snížit náklady a zvýšit produkci.",
     },
     {
       iconPath: "/icons/creative-flow.png",
       iconAlt: "Creative Flow icon",
-      title: language === "en" ? "Creative Flow" : "Kreativní Tok",
+      title: language === "en" ? "System Design:" : "Návrh systému:",
       description:
         language === "en"
-          ? "Streamline your campaign creation process easily."
-          : "Zjednodušte proces vytváření kampaně.",
+          ? "We design a custom AI marketing system around your team and goals."
+          : "Navrhneme vám marketingový systém s využitím umělé inteligence na míru, který bude odpovídat vašemu týmu a cílům.",
     },
     {
       iconPath: "/icons/hook.png",
       iconAlt: "Hook icon",
-      title: language === "en" ? "Brand Building" : "Budování Značky",
+      title: language === "en" ? "Execution & Enablement:" : "Provedení & zprovoznění:",
       description:
         language === "en"
-          ? "Cultivate strong and memorable brand identities."
-          : "Vytvářejte silné a nezapomenutelné identity značky.",
+          ? "We deploy content production and automation with your team in control."
+          : "Nasazujeme produkci a automatizaci obsahu s vaším týmem ve všech ohledech.",
     },
   ]
 
   return (
-    <section 
+    <section
       className="relative min-h-screen flex flex-col items-center justify-center py-8 sm:py-12 md:py-16 lg:py-20"
-      // @ts-ignore
     >
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/7 via-white/3 to-amber-80/50 -z-10" />
+      {/* Background overlay nad tím, co dělá body::before */}
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-800/30 via-blue/30 to-white/20 -z-10" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-30 text-center flex flex-col items-center w-full">
-        {/* Logo in hero - responsive heights */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center w-full">
+        {/* Logo */}
         <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 flex justify-center">
-          <img 
-            src="/images/hookon_logo.png" 
-            alt="hookon" 
-            className="h-40 sm:h-40 md:h-60 lg:h-80 object-contain" 
+          <img
+            src="/images/hookon_logo.png"
+            alt="hookon"
+            className="h-40 sm:h-40 md:h-60 lg:h-90 object-contain"
           />
         </div>
 
-        {/* H1 - mobile-first responsive sizing */}
-        <h1 className="glass-heading text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-800/15 mb-4 sm:mb-5 md:mb-6 lg:mb-8 text-balance">
+        {/* H1 */}
+        <h1 className="glass-heading text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-5 md:mb-6 lg:mb-40 text-balance">
           {t.hero.title}
         </h1>
 
-        {/* Subtitle - responsive text size and margin */}
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-slate-900/70 mb-8 sm:mb-10 md:mb-12 lg:mb-16 max-w-2xl mx-auto text-balance">
+        {/* Subtitle 1 */}
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-slate-900/80 mb-4 sm:mb-6 md:mb-8 lg:mb-40 max-w-2xl mx-auto text-balance">
           {t.hero.subtitle}
+        </p>
+
+        {/* Subtitle 2 */}
+        <p className="text-base sm:text-lg md:text-xl lg:text-4xl font-bold text-orange-600/90 mb-8 sm:mb-10 md:mb-12 lg:mb-16 max-w-3xl mx-auto text-balance">
+          {t.hero.subtitle2}
         </p>
       </div>
 
-      {/* FeatureCardsRow component */}
+      {/* FeatureCardsRow */}
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FeatureCardsRow heroCta={t.hero.cta1} features={features} />
+        <FeatureCardsRow
+          heroCta1={t.hero.cta1}
+          heroCta2={t.hero.cta2}
+          heroCta3={t.hero.cta3}
+          heroCta4={t.hero.cta4}
+          heroCta5={t.hero.cta5}
+          features={features}
+        />
       </div>
     </section>
   )

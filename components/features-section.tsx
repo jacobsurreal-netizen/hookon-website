@@ -34,7 +34,7 @@ export function FeaturesSection() {
       id="services"
       className="relative py-10 sm:py-14 md:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-green-70/30 to-white/10 -z-70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-green-100/20 to-white/10 -z-70" />
 
       <div className="max-w-6xl mx-auto">
         {/* Nadpis + podnadpis */}
@@ -55,13 +55,13 @@ export function FeaturesSection() {
               className="group relative p-4 sm:p-5 md:p-6 rounded-3xl backdrop-blur-xl
                          bg-gradient-to-br from-black/40 via-white/5 to-black/10
                          border border-white/25 hover:border-orange-200/60
-                         transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10"
+                         transition-all duration-300 hover:shadow-xl hover:shadow-orange-600/20"
             >
               {/* Ikona – menší na mobilu */}
               <div
                 className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mb-4 sm:mb-5
                            rounded-2xl transition-all duration-300 ease-out
-                           group-hover:scale-110 group-hover:rotate-3"
+                           group-hover:scale-150 group-hover:rotate-4"
               >
                 <Image
                   src={feature.iconPath || "/placeholder.svg"}

@@ -1,5 +1,6 @@
 "use client"
 
+import { useMemo, useState } from "react"
 import Image from "next/image"
 
 interface Feature {
@@ -10,14 +11,34 @@ interface Feature {
 }
 
 interface FeatureCardsRowProps {
-  heroCta: string
+  heroCta1: string
   heroCta2?: string
+  heroCta3?: string
+  heroCta4?: string
+  heroCta5?: string
   features: Feature[]
 }
 
-export function FeatureCardsRow({ heroCta, heroCta2, features }: FeatureCardsRowProps) {
+export function FeatureCardsRow({
+  heroCta1,
+  heroCta2,
+  heroCta3,
+  heroCta4,
+  heroCta5,
+  features,
+}: FeatureCardsRowProps) {
+  const [open, setOpen] = useState(false)
+
+  const details = useMemo(
+    () => [heroCta2, heroCta3, heroCta4, heroCta5].filter(Boolean) as string[],
+    [heroCta2, heroCta3, heroCta4, heroCta5]
+  )
+
+  const hasDetails = details.length > 0
+
   return (
     <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
       {/* Hero glass panel with CTA */}
       <div
         className="
@@ -31,12 +52,54 @@ export function FeatureCardsRow({ heroCta, heroCta2, features }: FeatureCardsRow
           shadow-[0_24px_80px_rgba(0,0,0,0.25)]
           mb-6 sm:mb-8
           overflow-hidden
+          group
         "
       >
         <div className="text-center">
-          <button className="px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 bg-gradient-to-r from-[#FF7A00] to-[#FF3300] text-white rounded-full hover:shadow-xl hover:shadow-orange-500/30 transition-all font-semibold text-sm sm:text-base hover:scale-105 transform">
-            {heroCta}
+          {/* hlavní CTA (klikatelné na mobile) */}
+          <button
+            type="button"
+            className="w-full cursor-pointer select-none"
+            onClick={() => {
+              if (!hasDetails) return
+              setOpen((v) => !v)
+            }}
+            aria-expanded={open}
+            aria-controls="hero-cta-details"
+          >
+            <p className="text-orange-600/90 font-bold text-sm sm:text-[38px]">
+              {heroCta1}
+            </p>
+
+             {/* hint jen pro mobily */}
+  {hasDetails && (
+    <p className="mt-1 text-[11px] text-slate-200/80 font-medium sm:hidden">
+      {open ? "Tap for Collapse" : "Tap for Expand"}
+    </p>
+  )}
           </button>
+
+          {/* detaily: mobil = klik (open), desktop = hover */}
+          {hasDetails && (
+
+            <div
+              id="hero-cta-details"
+              className={[
+                "overflow-hidden",
+                "transition-[max-height,opacity,transform] duration-500 ease-out",
+                // mobile / default (click)
+                open ? "max-h-64 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-1",
+                // desktop hover (funguje i bez kliku)
+                "md:group-hover:max-h-64 md:group-hover:opacity-100 md:group-hover:translate-y-0",
+              ].join(" ")}
+            >
+              {details.map((line, i) => (
+                <p key={i} className={(i === 0 ? "mt-2" : "mt-1") + " text-sm sm:text-lg font-bold text-slate-100/90"}>
+                  {line}
+                </p>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
@@ -63,27 +126,23 @@ export function FeatureCardsRow({ heroCta, heroCta2, features }: FeatureCardsRow
                 group-hover:-translate-y-1
               "
             >
-              {/* Inner subtle glow using ring */}
               <div className="absolute inset-0.5 rounded-2xl sm:rounded-3xl bg-gradient-to-tl from-white/50 to-transparent opacity-0 group-hover:opacity-60 transition-opacity" />
 
               <div className="relative">
-                <div className="mb-3 sm:mb-4 w-10 h-10 sm:w-12 sm:h-12 relative">
+                <div className="mb-3 sm:mb-4 w-16 h-16 sm:w-20 sm:h-20 mx-auto relative">
                   <Image
                     src={feature.iconPath || "/placeholder.svg"}
                     alt={feature.iconAlt}
-                    width={55}
-                    height={55}
-                    className="w-full h-full object-contain"
+                    fill
+                    className="object-contain"
                   />
                 </div>
 
-                {/* Title */}
-                <h3 className="text-lg sm:text-xl font-bold text-orange-600/90 mb-3 sm:mb-4">
+                <h3 className="text-lg sm:text-xl font-bold text-orange-600/90 mb-3 sm:mb-4 text-center">
                   {feature.title}
                 </h3>
 
-                {/* Description */}
-                <p className="text-sm sm:text-base text-gray-900 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-900 leading-relaxed text-center">
                   {feature.description}
                 </p>
               </div>

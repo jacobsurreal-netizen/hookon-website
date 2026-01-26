@@ -7,42 +7,48 @@ export const translations = {
       contact: "Get Started",
     },
     hero: {
-      title: "Hook Your Audience with AI-Powered Advertising",
-      subtitle: "Engage your audience with AI-powered advertising",
-      cta1: "Get Started",
-      cta2: "See Our Work",
+      title: "WE ENABLE MARKETING DEPARTMENTS TO SCALE CONTENT & REVENUE WITH AI",
+      subtitle: "Hookon.ai helps marketing departments produce, optimize, and scale video, audio, voice, and written content through AI-powered systems.",
+      subtitle2: "We don’t replace teams; We upgrade how marketing works.",
+      cta1: "Typical Results",
+      cta2: "30–50% lower marketing operating costs",
+      cta3: "3–7× higher content output",
+      cta4: "20–40% faster execution",
+      cta5: "10–25% uplift in marketing-driven revenue",
     },
     features: {
-      title: "Unlock AI-Driven Growth",
-      subtitle: "Advanced capabilities designed for modern marketing teams",
+      title: "AI-Powered Multimodal Production",
+      subtitle: "We help marketing departments produce and scale brand-safe content integrated into one AI-powered system:",
       feature1: {
         name: "AI-Powered Advertising",
         description:
-          "Drive engagement with smart, targeted AI-driven ads that reach the right audience at the right time",
+          "AI video ads, commercials & brand films",
       },
       feature2: {
         name: "Brand Strategy",
-        description: "Build a strong brand identity with innovative AI techniques and strategic positioning",
+        description: "Performance copy, landing pages & long-form text",
       },
       feature3: {
         name: "Creative Solutions",
-        description: "Boost your brand's creativity and reach with AI-enhanced campaigns and content creation",
+        description: "Audio, podcasts, voice content & AI spokespersons",
       },
     },
     benefits: {
       title: "Why Choose hookon",
-      subtitle: "Proven results for businesses of all sizes",
+      subtitle1: "Marketing Has Changed. Operating Models Haven’t.",
+      subtitle2: "Teams are expected to produce more content and move faster with fewer resources. Traditional workflows don’t scale efficiently; AI does. We help marketing departments modernize execution without losing control or quality.",
+      title1: "WHO WE WORK WITH",
       benefit1: {
-        name: "Performance",
-        description: "Data-driven campaigns that deliver measurable ROI and scalable growth",
+        name: "CMOs & Heads of Marketing",
+        description: "",
       },
       benefit2: {
-        name: "Speed",
-        description: "Launch campaigns in days, not weeks, with AI-accelerated workflows",
+        name: "Growth & Demand Generation teams",
+        description: "",
       },
       benefit3: {
-        name: "Scalability",
-        description: "Grow from startup to enterprise without changing your workflow",
+        name: "Mid-size to enterprise organizations scaling across markets",
+        description: "",
       },
     },
     caseStudies: {
@@ -52,13 +58,13 @@ export const translations = {
       comingSoon: "Coming Soon",
     },
     cta: {
-      title: "Ready to Transform Your Marketing?",
-      subtitle: "Join forward-thinking brands using AI for competitive advantage",
-      button: "Book a Demo",
+      title: "Multiply the power of your marketing.",
+      subtitle: "Even a great team can do more with the best tools. We’ll help you implement AI so it takes over the routine while your people focus on strategy.",
+      button: "START SCALING",
     },
     contact: {
-      title: "Get in Touch",
-      subtitle: "Let's discuss how we can transform your marketing with AI",
+      title: "Schedule a consultation",
+      subtitle: "and get an AI blueprint tailored precisely to your needs.",
       namePlaceholder: "Your Name",
       emailPlaceholder: "your@email.com",
       messagePlaceholder: "Type your message…",
@@ -83,8 +89,12 @@ export const translations = {
     hero: {
       title: "Posuňte svou značku pomocí AI-řízených reklam",
       subtitle: "Zaujměte své publikum pomocí reklamy s využitím umělé inteligence",
+      subtitle2: "We don’t replace teams; We upgrade how marketing works.",
       cta1: "Začít",
       cta2: "Podívejte se na naši práci",
+      cta3: "3–7× higher content output",
+      cta4: "20–40% faster execution",
+      cta5: "10–25% uplift in marketing-driven revenue",
     },
     features: {
       title: "Odemkněte AI-řízený růst",
@@ -105,7 +115,9 @@ export const translations = {
     },
     benefits: {
       title: "Proč zvolit hookon",
-      subtitle: "Ověřené výsledky pro firmy všech velikostí",
+      subtitle1: "Ověřené výsledky pro firmy všech velikostí",
+      subtitle2: "We don’t replace teams; We upgrade how marketing works.",
+      title1: "Why Choose hookon",
       benefit1: {
         name: "Výkon",
         description: "Datově řízené kampaně, které přinášejí měřitelné ROI a škálovatelný růst",

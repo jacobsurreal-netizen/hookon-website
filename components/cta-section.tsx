@@ -17,7 +17,7 @@ export function CTASection() {
 
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-orange-500/80 mb-10 text-balance">{t.cta.title}</h2>
-        <p className="text-lg text-white/80 mb-10 max-w-2xl mx-auto">{t.cta.subtitle}</p>
+        <p className="text-xl text-white/80 mb-10 font-bold max-w-2xl mx-auto">{t.cta.subtitle}</p>
         <button className="px-10 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full hover:shadow-xl hover:shadow-orange-500/30 transition-all font-semibold text-lg hover:scale-105 transform">
           {t.cta.button}
         </button>
