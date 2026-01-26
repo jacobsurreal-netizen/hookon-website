@@ -125,14 +125,13 @@ hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
 />
 
       <HeroSection />
+      <CTASection />
       <FeaturesSection />
-      <BenefitsSection />
       <LazyVideoSection
         src="/videos/Canibal_Corpse_Wear.mp4"
-        title="See hookon in action"
-        subtitle="Watch how AI-powered creative workflows transform your advertising and branding."
-      />
-      <CTASection />
+        title="SEE HOOKON.ai IN ACTION"
+        subtitle="Watch how AI-powered creative workflows transform your advertising and branding."/>
+      <BenefitsSection />
       <OurWorkCarousel />
       <ContactCtaSection />
     </div>

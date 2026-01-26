@@ -83,7 +83,7 @@ export function OurWorkCarousel() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % cards.length)
-    }, 15000)
+    }, 7500)
     return () => clearInterval(timer)
   }, [cards.length])
 
@@ -125,7 +125,7 @@ export function OurWorkCarousel() {
               return (
                 <div
                   key={card.id}
-                  className="relative transition-all duration-2500 ease-out"
+                  className="relative transition-all duration-2000 ease-out"
                   style={{
                     transform: `scale(${scale}) rotateY(${cardRotations[idx]}deg)`,
                     opacity: opacity,
@@ -224,7 +224,7 @@ export function OurWorkCarousel() {
         <div
         className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-md
                flex items-start justify-center px-4
-               pt-1100 sm:pt-1100 md:pt-1200 lg:pt-937"
+               pt-1330 sm:pt-1100 md:pt-1550 lg:pt-1235"
 
           onClick={() => setSelectedCard(null)}
         >

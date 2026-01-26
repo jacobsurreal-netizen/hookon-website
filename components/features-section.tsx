@@ -39,7 +39,7 @@ export function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
         {/* Nadpis + podnadpis */}
         <div className="text-center mb-10 sm:mb-14 md:mb-20">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-slate-50/70 mb-4 sm:mb-6 md:mb-8 text-balance">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-slate-50/90 mb-4 sm:mb-6 md:mb-8 text-balance">
             {t.features.title}
           </h2>
           <p className="text-sm sm:text-base md:text-lg font-bold text-orange-600/80 max-w-2xl md:max-w-3xl mx-auto">
@@ -53,13 +53,13 @@ export function FeaturesSection() {
             <div
               key={idx}
               className="group relative p-4 sm:p-5 md:p-6 rounded-3xl backdrop-blur-xl
-                         bg-gradient-to-br from-black/40 via-white/5 to-black/10
+                         bg-gradient-to-br from-black/40 via-slate-400/20 to-black/10
                          border border-white/25 hover:border-orange-200/60
                          transition-all duration-300 hover:shadow-xl hover:shadow-orange-600/20"
             >
               {/* Ikona – menší na mobilu */}
               <div
-                className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mb-4 sm:mb-5
+                className="w-16 h-16 sm:w-20 sm:h-20 max-w-md mx-auto flex items-center justify-center mb-4 sm:mb-5
                            rounded-2xl transition-all duration-300 ease-out
                            group-hover:scale-150 group-hover:rotate-4"
               >
@@ -72,10 +72,10 @@ export function FeaturesSection() {
                 />
               </div>
 
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-800/80 text-center mb-3 sm:mb-4">
                 {feature.name}
               </h3>
-              <p className="text-sm sm:text-base text-white font-bold leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-100/90 text-center font-bold leading-relaxed">
                 {feature.description}
               </p>
             </div>

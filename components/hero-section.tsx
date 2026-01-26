@@ -60,7 +60,7 @@ export function HeroSection() {
         </h1>
 
         {/* Subtitle 1 */}
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-slate-900/80 mb-4 sm:mb-6 md:mb-8 lg:mb-40 max-w-2xl mx-auto text-balance">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-slate-800/80 mb-4 sm:mb-6 md:mb-8 lg:mb-40 max-w-2xl mx-auto text-balance">
           {t.hero.subtitle}
         </p>
 

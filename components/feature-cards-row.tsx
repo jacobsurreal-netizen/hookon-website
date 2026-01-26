@@ -142,7 +142,7 @@ export function FeatureCardsRow({
                   {feature.title}
                 </h3>
 
-                <p className="text-sm sm:text-base text-gray-900 leading-relaxed text-center">
+                <p className="text-sm sm:text-base font-bold text-slate-800/80 leading-relaxed text-center">
                   {feature.description}
                 </p>
               </div>

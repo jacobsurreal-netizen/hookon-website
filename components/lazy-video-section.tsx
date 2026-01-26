@@ -12,7 +12,7 @@ type LazyVideoSectionProps = {
 }
 
 export function LazyVideoSection({
-  title = "See hookon in action",
+  title = "SEE HOOKON.ai IN ACTION",
   subtitle = "Watch how AI-powered creative workflows transform your advertising.",
   src = "/videos/Canibal_Corpse_Wear.mp4",
   poster,

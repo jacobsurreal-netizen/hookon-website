@@ -15,8 +15,8 @@ export function CaseStudiesSection() {
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">{t.caseStudies.title}</h2>
-          <p className="text-lg text-gray-800 max-w-2xl mx-auto">{t.caseStudies.subtitle}</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-800/80 mb-4 text-balance">{t.caseStudies.title}</h2>
+          <p className="text-lg text-slate-800/80 max-w-2xl mx-auto">{t.caseStudies.subtitle}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
