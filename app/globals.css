@@ -138,15 +138,10 @@
 }
 @media (max-width: 768px) {
   body::before {
-    /* úplně bez animace na mobilech */
+    /* žádná animace na mobilech */
     animation: none;
-    filter: blur(1px); /* nebo 0, když chceš extra ostré */
-    transform: scale(1.02); /* lehké zvětšení, ať nebliká při resize */
-  }
-
-  @keyframes heroFisheyeMobile {
-    0%, 100% { transform: scale(1.01); }
-    50%      { transform: scale(1.03); }
+    filter: blur(1px); /* nebo klidně smaž/změň */
+    transform: none;   /* důležité: nahradí škálování z animace */
   }
 }
 
