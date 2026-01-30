@@ -78,6 +78,17 @@ export const translations = {
       contact: "Contact",
       email: "hello@hookon.io",
     },
+    video: {
+      title: "SEE HOOKON.ai IN ACTION",
+    },
+    heroFeatures: {
+      auditTitle: "Audit & Strategy:",
+      auditDesc: "We identify where AI can immediately reduce cost and increase output.",
+      systemTitle: "System Design:",
+      systemDesc: "We design a custom AI marketing system around your team and goals.",
+      execTitle: "Execution & Enablement:",
+      execDesc: "We deploy content production and automation with your team in control.",
+    },
   },
   cs: {
     nav: {
@@ -139,7 +150,7 @@ export const translations = {
     },
     cta: {
       title: "JSTE PŘIPRAVENI TRANSFORMOVAT SVŮJ MARKETING?",
-      subtitle: "Připojte se k forward-thinking značkám, které používají AI pro konkurenční výhodu. Pomůžeme vám implementovat AI tak, aby převzala rutinu a vaši lidé se mohli soustředit na strategii.",
+      subtitle: "Přidejte se k vizionářským značkám, které posouvají hranice díky AI. Postaráme se o to, aby AI převzala rutinu a váš tým se mohl soustředit na to, na čem opravdu záleží – strategii.",
       button: "BOOKNOUT HOVOR",
     },
     contact: {
@@ -153,10 +164,112 @@ export const translations = {
       successMessage: "Děkujeme! Brzy se vám ozveme.",
     },
     footer: {
-      tagline: "  ____ h o o k o n ____",
+      tagline: "Vytvořeno pro marketingové týmy.",
       copyright: "© 2026 hookon. Všechna práva vyhrazena.",
       contact: "Kontakt",
       email: "hello@hookon.io",
+    },
+       video: {
+      title: "PODÍVEJTE SE NA HOOKON.ai V AKCI",
+    },
+    heroFeatures: {
+      auditTitle: "Audit & strategie:",
+      auditDesc: "Identifikujeme oblasti, kde může umělá inteligence okamžitě snížit náklady a zvýšit produkci.",
+      systemTitle: "Návrh systému:",
+      systemDesc: "Navrhneme vám marketingový systém s využitím umělé inteligence na míru, který bude odpovídat vašemu týmu a cílům.",
+      execTitle: "Provedení & zprovoznění:",
+      execDesc: "Nasazujeme produkci a automatizaci obsahu s vaším týmem ve všech ohledech.",
+    },
+  },
+  de: {
+    nav: {
+      about: "Über uns",
+      services: "Dienstleistungen",
+      work: "Unsere Arbeit",
+      contact: "VERBINDEN",
+    },
+    hero: {
+      title: "WIR ERMÖGLICHEN MARKETINGABTEILUNGEN, CONTENT &amp; UMSATZ MIT KI ZU SKALIEREN",
+      subtitle: "Hookon.ai hilft Marketingabteilungen bei der Produktion, Optimierung und Skalierung von Video-, Audio- und Textinhalten durch KI-gestützte Systeme.",
+      subtitle2: "Wir ersetzen keine Teams; wir upgraden die Art und Weise, wie Marketing funktioniert.",
+      cta1: "TYPISCHE ERGEBNISSE",
+      cta2: "30–50 % niedrigere operative Marketingkosten",
+      cta3: "3–7× höherer Content-Output",
+      cta4: "20–40 % schnellere Ausführung",
+      cta5: "10–25 % Umsatzsteigerung durch Marketing",
+    },
+    features: {
+      title: "KI-GESTÜTZTE MULTIMODALE PRODUKTION",
+      subtitle: "Wir helfen bei der Skalierung von &quot;Brand-safe&quot; Inhalten, integriert in ein leistungsstarkes System:",
+      feature1: {
+        name: "KI-gesteuerte Werbung",
+        description:
+          "KI-Videoanzeigen, Werbespots &amp; Markenfilme",
+      },
+      feature2: {
+        name: "Markenstrategie",
+        description: "Performance-Copy, Landingpages &amp; Long-Form-Texte",
+      },
+      feature3: {
+        name: "Kreative Lösungen",
+        description: "Audio-Content, Podcasts &amp; KI-Sprecher",
+      },
+    },
+    benefits: {
+      title: "WARUM HOOKON.ai?",
+      subtitle1: "Das Marketing hat sich verändert. Die Betriebsmodelle nicht.",
+      subtitle2: "Teams müssen mehr Inhalte mit weniger Ressourcen produzieren. Traditionelle Workflows skalieren nicht effizient – KI schon. Wir helfen Abteilungen, die Ausführung zu modernisieren, ohne die Kontrolle oder Qualität zu verlieren.",
+      title1: "MIT WEM WIR ARBEITEN",
+      benefit1: {
+        name: "CMOs & Marketing Directors",
+        description: "Mit KI erhöhen wir die Kapazität interner Teams, indem wir Routineaufgaben und operative Arbeit automatisieren.",
+      },
+      benefit2: {
+        name: "Teams für Growth & Demand Generation",
+        description: "Beschleunigung von Wachstumsprozessen und Demand Generation durch KI-Automatisierung.",
+      },
+      benefit3: {
+        name: "Mittelständische und große Unternehmen in mehreren Märkten KI-gestützte ",
+        description: "Prozessoptimierung und effiziente Marketing-Lokalisierung für internationale Märkte.",
+      },
+    },
+    caseStudies: {
+      title: "UNSERE ARBEIT",
+      subtitle: "Echte Ergebnisse von echten Kunden",
+      project: "Projekt",
+      comingSoon: "Demnächst",
+    },
+    cta: {
+      title: "SIND SIE BEREIT, IHR MARKETING ZU VERÄNDERN?",
+      subtitle: "Schließen Sie sich visionären Marken an, die mit KI Grenzen verschieben. Wir sorgen dafür, dass KI Routineaufgaben übernimmt und sich Ihr Team auf das Wesentliche konzentrieren kann – die Strategie.",
+      button: "CALL BUCHEN",
+    },
+    contact: {
+      title: "KONTAKTIEREN SIE UNS",
+      subtitle: "Gemeinsam revolutionieren wir Ihr Marketing mit KI. Buchen Sie eine Beratung und erhalten Sie Ihren individuellen KI‑Blueprint für Ihren Erfolg.",
+      namePlaceholder: "Ihr Name",
+      emailPlaceholder: "ihre@email.com",
+      messagePlaceholder: "Schreiben Sie Ihre Nachricht…",
+      button: "NACHRICHT SENDEN",
+      sending: "Wird gesendet...",
+      successMessage: "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
+    },
+    footer: {
+      tagline: "Gebaut für Marketingteams.",
+      copyright: "© 2026 hookon. Alle Rechte vorbehalten.",
+      contact: "Kontakt",
+      email: "hello@hookon.io",
+    },
+       video: {
+      title: "ERLEBEN SIE HOOKON.ai IN AKTION.",
+    },
+    heroFeatures: {
+      auditTitle: "Analyse & Strategie:",
+      auditDesc: "Wir identifizieren Bereiche, in denen Künstliche Intelligenz sofort Kosten senken und die Produktivität steigern kann.",
+      systemTitle: "Systemdesign:",
+      systemDesc: "Wir entwerfen ein maßgeschneidertes Marketingsystem auf Basis von KI, das perfekt zu Ihrem Team und Ihren Zielen passt.",
+      execTitle: "Implementierung & Inbetriebnahme:",
+      execDesc: "Gemeinsam mit Ihrem Team setzen wir die Content-Produktion und Automatisierung in allen Bereichen um.",
     },
   },
 }

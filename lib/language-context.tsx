@@ -3,7 +3,7 @@
 import type React from "react"
 import { createContext, useContext, useState } from "react"
 
-type Language = "en" | "cs"
+export type Language = "en" | "cs" | "de"
 
 interface LanguageContextType {
   language: Language

@@ -219,26 +219,32 @@ export function OurWorkCarousel() {
         </div>
       </div>
 
-      {/* Overlay s velkým náhledem */}
+            {/* Overlay s velkým náhledem – jen nad karuselem */}
       {selectedCard && (
         <div
-        className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-md
-               flex items-start justify-center px-4
-               pt-1330 sm:pt-1100 md:pt-1550 lg:pt-1235"
-
+          className="absolute inset-0 z-[60] bg-black/80 backdrop-blur-md
+                     flex items-center justify-center px-4"
           onClick={() => setSelectedCard(null)}
         >
           <div
-            className="relative max-w-4xl w-full max-h-[90vh] rounded-3xl overflow-hidden border border-white/20 bg-black/40"
+            className="relative max-w-3xl w-full h-[80vh] rounded-3xl overflow-hidden border border-white/20 bg-black/40"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
               src={selectedCard.image}
               alt={selectedCard.title}
               width={1600}
-              height={900}
-              className="w-full h-full object-contain bg-black"
+              height={1400}
+              className="w-full h-full object-cover object-center bg-black"
             />
+            <a
+              href={selectedCard.image}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-3 left-3 text-xs text-white/80 underline"
+             >
+              Open full image
+            </a>
 
             <button
               onClick={() => setSelectedCard(null)}
@@ -259,6 +265,7 @@ export function OurWorkCarousel() {
           </div>
         </div>
       )}
+
     </section>
   )
 }

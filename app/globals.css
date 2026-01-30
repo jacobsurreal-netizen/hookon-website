@@ -138,10 +138,10 @@
 }
 @media (max-width: 768px) {
   body::before {
-    /* jednodušší / jiná animace na mobilech */
-    animation: heroFisheyeMobile 8s ease-in-out infinite;
-    /* případně slabší blur nebo žádný */
-    filter: blur(1px);
+    /* úplně bez animace na mobilech */
+    animation: none;
+    filter: blur(1px); /* nebo 0, když chceš extra ostré */
+    transform: scale(1.02); /* lehké zvětšení, ať nebliká při resize */
   }
 
   @keyframes heroFisheyeMobile {

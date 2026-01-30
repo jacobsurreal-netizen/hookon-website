@@ -6,34 +6,26 @@ import { FeatureCardsRow } from "@/components/feature-cards-row"
 export function HeroSection() {
   const { language } = useLanguage()
   const t = translations[language]
+  
 
   const features = [
     {
       iconPath: "/icons/ai-driven-ads.png",
       iconAlt: "AI-Driven Ads icon",
-      title: language === "en" ? "Audit & Strategy:" : "Audit & strategie:",
-      description:
-        language === "en"
-          ? "We identify where AI can immediately reduce cost and increase output."
-          : "Identifikujeme oblasti, kde může umělá inteligence okamžitě snížit náklady a zvýšit produkci.",
+      title: t.heroFeatures.auditTitle,
+    description: t.heroFeatures.auditDesc,
     },
     {
       iconPath: "/icons/creative-flow.png",
       iconAlt: "Creative Flow icon",
-      title: language === "en" ? "System Design:" : "Návrh systému:",
-      description:
-        language === "en"
-          ? "We design a custom AI marketing system around your team and goals."
-          : "Navrhneme vám marketingový systém s využitím umělé inteligence na míru, který bude odpovídat vašemu týmu a cílům.",
+      title: t.heroFeatures.systemTitle,
+    description: t.heroFeatures.systemDesc,
     },
     {
       iconPath: "/icons/hook.png",
       iconAlt: "Hook icon",
-      title: language === "en" ? "Execution & Enablement:" : "Provedení & zprovoznění:",
-      description:
-        language === "en"
-          ? "We deploy content production and automation with your team in control."
-          : "Nasazujeme produkci a automatizaci obsahu s vaším týmem ve všech ohledech.",
+      title: t.heroFeatures.execTitle,
+    description: t.heroFeatures.execDesc,
     },
   ]
 
