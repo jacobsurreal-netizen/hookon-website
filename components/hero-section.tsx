@@ -47,9 +47,11 @@ export function HeroSection() {
         </div>
 
         {/* H1 */}
-        <h1 className="glass-heading text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-5 md:mb-6 lg:mb-40 text-balance">
+        <h1
+            className="glass-heading text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-5 md:mb-6 lg:mb-24 text-balance">
           {t.hero.title}
         </h1>
+
 
         {/* Subtitle 1 */}
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-slate-800/80 mb-4 sm:mb-6 md:mb-8 lg:mb-40 max-w-2xl mx-auto text-balance">

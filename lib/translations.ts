@@ -109,7 +109,7 @@ export const translations = {
     },
     features: {
       title: "AI MULTIMODÁLNÍ PRODUKCE",
-      subtitle: "Pomáháme škálovat obsah v bezpečném prostředí značky (brand-safe) v rámci jednoho integrovaného systému:",
+      subtitle: "Pomáháme škálovat obsah v bezpečném prostředí značky “Brand-safe“ v rámci jednoho integrovaného systému:",
       feature1: {
         name: "AI-řízená reklama",
         description:
@@ -200,7 +200,7 @@ export const translations = {
     },
     features: {
       title: "KI-GESTÜTZTE MULTIMODALE PRODUKTION",
-      subtitle: "Wir helfen bei der Skalierung von &quot;Brand-safe&quot; Inhalten, integriert in ein leistungsstarkes System:",
+      subtitle: "Wir helfen bei der Skalierung von “Brand-safe“ Inhalten, integriert in ein leistungsstarkes System:",
       feature1: {
         name: "KI-gesteuerte Werbung",
         description:
