@@ -76,7 +76,7 @@ export const translations = {
       tagline: "Built for marketing teams",
       copyright: "© 2026 hookon.ai All rights reserved.",
       contact: "Contact",
-      email: "hello@hookon.io",
+      email: "info@hookon.ai",
     },
     video: {
       title: "SEE HOOKON.ai IN ACTION",
@@ -167,7 +167,7 @@ export const translations = {
       tagline: "Vytvořeno pro marketingové týmy.",
       copyright: "© 2026 hookon. Všechna práva vyhrazena.",
       contact: "Kontakt",
-      email: "hello@hookon.io",
+      email: "info@hookon.ai",
     },
        video: {
       title: "PODÍVEJTE SE NA HOOKON.ai V AKCI",
@@ -189,7 +189,7 @@ export const translations = {
       contact: "VERBINDEN",
     },
     hero: {
-      title: "WIR ERMÖGLICHEN MARKETINGABTEILUNGEN, CONTENT &amp; UMSATZ MIT KI ZU SKALIEREN",
+      title: "WIR ERMÖGLICHEN MARKETINGABTEILUNGEN, CONTENT & UMSATZ MIT KI ZU SKALIEREN",
       subtitle: "Hookon.ai hilft Marketingabteilungen bei der Produktion, Optimierung und Skalierung von Video-, Audio- und Textinhalten durch KI-gestützte Systeme.",
       subtitle2: "Wir ersetzen keine Teams; wir upgraden die Art und Weise, wie Marketing funktioniert.",
       cta1: "TYPISCHE ERGEBNISSE",
@@ -204,15 +204,15 @@ export const translations = {
       feature1: {
         name: "KI-gesteuerte Werbung",
         description:
-          "KI-Videoanzeigen, Werbespots &amp; Markenfilme",
+          "KI-Videoanzeigen, Werbespots & Markenfilme",
       },
       feature2: {
         name: "Markenstrategie",
-        description: "Performance-Copy, Landingpages &amp; Long-Form-Texte",
+        description: "Performance-Copy, Landingpages & Long-Form-Texte",
       },
       feature3: {
         name: "Kreative Lösungen",
-        description: "Audio-Content, Podcasts &amp; KI-Sprecher",
+        description: "Audio-Content, Podcasts & KI-Sprecher",
       },
     },
     benefits: {
@@ -258,7 +258,7 @@ export const translations = {
       tagline: "Gebaut für Marketingteams.",
       copyright: "© 2026 hookon. Alle Rechte vorbehalten.",
       contact: "Kontakt",
-      email: "hello@hookon.io",
+      email: "info@hookon.ai",
     },
        video: {
       title: "ERLEBEN SIE HOOKON.ai IN AKTION.",

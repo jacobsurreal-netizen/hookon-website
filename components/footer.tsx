@@ -63,9 +63,9 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-orange-500 mb-4">{t.footer.contact}</h4>
+            <h4 className="font-semibold text-[#0ccdff] mb-4">{t.footer.contact}</h4>
             <p className="text-sm text-black/70">
-              <a href="mailto:hello@hookon.io" className="hover:text-orange-500 transition">
+              <a href="mailto:info@hookon.ai" className="hover:text-[#2660ff] transition">
                 {t.footer.email}
               </a>
             </p>

@@ -23,7 +23,7 @@ export function CaseStudiesSection() {
           {placeholderCards.map((card) => (
             <div
               key={card.id}
-              className="relative h-96 rounded-3xl backdrop-blur-xl bg-gradient-to-br from-white/50 to-white/30 border border-white/40 flex items-center justify-center overflow-hidden group hover:border-orange-200/60 transition-all duration-300"
+              className="relative h-96 rounded-3xl backdrop-blur-xl bg-gradient-to-br from-white/50 to-white/30 border border-white/40 flex items-center justify-center overflow-hidden group hover:border-orange-[#0ccdff] transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="text-center z-10">

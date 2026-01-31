@@ -63,7 +63,7 @@ export default function Home() {
     relative
     max-w-6xl mx-auto
     rounded-[32px]
-    bg-gradient-to-br from-amber-700/40 via-blue-400/30 to-orange-500/50
+    bg-gradient-to-br from-blue-600/50 via-[#0ccdff]/20 to-[#2660ff]/40
     backdrop-blur-[5px]
     border border-white/15
     ring-7 ring-inset ring-white/7
@@ -128,9 +128,9 @@ hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
       <CTASection />
       <FeaturesSection />
       <LazyVideoSection
-        src="/videos/Canibal_Corpse_Wear.mp4"
-        title="SEE HOOKON.ai IN ACTION"
-        subtitle="Watch how AI-powered creative workflows transform your advertising and branding."/>
+        src="/videos/Canibal_Corpse_Wear.mp4">
+  
+        </LazyVideoSection>
       <BenefitsSection />
       <OurWorkCarousel />
       <ContactCtaSection />

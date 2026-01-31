@@ -42,7 +42,7 @@ export function FeaturesSection() {
           <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-slate-50/90 mb-4 sm:mb-6 md:mb-8 text-balance">
             {t.features.title}
           </h2>
-          <p className="text-sm sm:text-base md:text-lg font-bold text-orange-600/80 max-w-2xl md:max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg font-bold text-[#2660ff] max-w-2xl md:max-w-3xl mx-auto">
             {t.features.subtitle}
           </p>
         </div>
@@ -54,8 +54,8 @@ export function FeaturesSection() {
               key={idx}
               className="group relative p-4 sm:p-5 md:p-6 rounded-3xl backdrop-blur-xl
                          bg-gradient-to-br from-black/40 via-slate-400/20 to-black/10
-                         border border-white/25 hover:border-orange-200/60
-                         transition-all duration-300 hover:shadow-xl hover:shadow-orange-600/20"
+                         border border-white/25 hover:border[#2660ff]
+                         transition-all duration-300 hover:shadow-xl hover:shadow-[#0ccdff]"
             >
               {/* Ikona – menší na mobilu */}
               <div

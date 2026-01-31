@@ -52,9 +52,9 @@ export function Navigation() {
           <div className="flex items-center gap-2 sm:gap-3">
             <LanguageToggle />
             <button className="hidden sm:inline-flex px-4 sm:px-5 py-1.5 sm:py-2
-                               bg-gradient-to-r from-orange-500 to-orange-600
+                               bg-gradient-to-r from-[#0ccdff] to-[#2660ff]
                                text-white rounded-full
-                               hover:shadow-lg hover:shadow-orange-500/25
+                               hover:shadow-lg hover:shadow-[#0ccdff]/70
                                transition-all font-medium text-xs sm:text-sm">
               {t.nav.contact}
             </button>

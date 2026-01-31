@@ -137,14 +137,14 @@ export function OurWorkCarousel() {
                                 backdrop-blur-x4 bg-gradient-to-br from-white/5 to-white/10
                                 border-[3px] ${
                                   isCenter
-                                    ? "border-orange-400/40 shadow-2xl shadow-orange-500/30"
+                                    ? "border-[#0ccdff] shadow-2xl shadow-[#2660ff]"
                                     : "border-white/40 hover:border-orange-200/60"
                                 }
                                 flex flex-col items-center justify-center overflow-hidden
                                 group transition-all duration-300`}
                   >
                     {/* Card gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-br from--[#0ccdff] to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
                     {/* Card content */}
                     <div className="text-center z-10 px-6">
@@ -165,7 +165,7 @@ export function OurWorkCarousel() {
                         {card.description}
                       </p>
 
-                      <button className="px-6 py-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-800 text-white font-medium hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300">
+                      <button className="px-6 py-2 rounded-full bg-gradient-to-r from-[#0ccdff] to-[#2660ff] text-white font-medium hover:shadow-lg hover:shadow[#2660ff] transition-all duration-300">
                         {t.caseStudies.comingSoon}
                       </button>
                     </div>
@@ -181,7 +181,7 @@ export function OurWorkCarousel() {
             className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/30 backdrop-blur-md border border-white/50 hover:bg-white/15 transition-all duration-300 group"
           >
             <svg
-              className="w-6 h-6 text-gray-900 group-hover:text-orange-600 transition-colors"
+              className="w-6 h-6 text-gray-900 group-hover:text-[#0ccdff] transition-colors"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -195,7 +195,7 @@ export function OurWorkCarousel() {
             className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/30 backdrop-blur-md border border-white/50 hover:bg-white/15 transition-all duration-300 group"
           >
             <svg
-              className="w-6 h-6 text-gray-900 group-hover:text-orange-600 transition-colors"
+              className="w-6 h-6 text-gray-900 group-hover:text-[#0ccdff] transition-colors"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -211,7 +211,7 @@ export function OurWorkCarousel() {
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  idx === currentIndex ? "bg-orange-500 w-8" : "bg-white/40 w-2 hover:bg-white/60"
+                  idx === currentIndex ? "bg-cyan-400 w-8" : "bg-white/40 w-2 hover:bg-white/60"
                 }`}
               />
             ))}

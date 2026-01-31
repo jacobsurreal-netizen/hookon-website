@@ -16,7 +16,7 @@ export function LanguageToggle() {
           baseClasses +
           " " +
           (language === "en"
-            ? "bg-orange-500 text-white"
+            ? "bg-[#0ccdff] text-white"
             : "bg-white/20 text-gray-700 hover:bg-white/30")
         }
       >
@@ -29,7 +29,7 @@ export function LanguageToggle() {
           baseClasses +
           " " +
           (language === "cs"
-            ? "bg-orange-500 text-white"
+            ? "bg-[#0ccdff] text-white"
             : "bg-white/20 text-gray-700 hover:bg-white/30")
         }
       >
@@ -42,7 +42,7 @@ export function LanguageToggle() {
           baseClasses +
           " " +
           (language === "de"
-            ? "bg-orange-500 text-white"
+            ? "bg-[#0ccdff] text-white"
             : "bg-white/20 text-gray-700 hover:bg-white/30")
         }
       >

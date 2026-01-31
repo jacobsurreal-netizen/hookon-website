@@ -37,7 +37,7 @@ export function BenefitsSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-slate-50/90 mb-4 text-balance">{t.benefits.title}</h2>
-          <p className="mt-10 text-lg font-bold text-orange-600/80 max-w-2xl mx-auto">{t.benefits.subtitle1}</p>
+          <p className="mt-10 text-lg font-bold text-[#2660ff] max-w-2xl mx-auto">{t.benefits.subtitle1}</p>
           <p className="mt-5 text-lg font-bold text-slate-800/80 max-w-2xl mx-auto">{t.benefits.subtitle2}</p>
           <h3 className="mt-12 text-4xl md:text-4xl font-bold text-slate-50/90 mb-4 text-balance">{t.benefits.title1}</h3>
         </div>

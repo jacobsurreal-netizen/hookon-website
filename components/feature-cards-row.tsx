@@ -67,7 +67,7 @@ export function FeatureCardsRow({
             aria-expanded={open}
             aria-controls="hero-cta-details"
           >
-            <p className="text-orange-600/90 font-bold text-sm sm:text-[38px]">
+            <p className="text-[#2660ff] font-bold text-sm sm:text-[38px]">
               {heroCta1}
             </p>
 
@@ -138,7 +138,7 @@ export function FeatureCardsRow({
                   />
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-bold text-orange-600/90 mb-3 sm:mb-4 text-center">
+                <h3 className="text-lg sm:text-xl font-bold text-[#2660ff] mb-3 sm:mb-4 text-center">
                   {feature.title}
                 </h3>
 

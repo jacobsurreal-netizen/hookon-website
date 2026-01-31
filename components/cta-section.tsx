@@ -12,9 +12,9 @@ export function CTASection() {
       <div className="absolute inset-0 bg-gradient-to-r from-amber-600/30 via-blue-400/20 to-slate-400/40 -z-10" />
 
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-5xl font-bold text-orange-600/90 mb-10 text-balance">{t.cta.title}</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-[#2660ff] mb-10 text-balance">{t.cta.title}</h2>
         <p className="text-xl text-white/80 mb-10 font-bold max-w-2xl mx-auto">{t.cta.subtitle}</p>
-        <button className="px-10 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full hover:shadow-xl hover:shadow-orange-500/30 transition-all font-semibold text-lg hover:scale-105 transform">
+        <button className="px-10 py-4 bg-gradient-to-r from-[#0ccdff] to-[#2660ff] text-white rounded-full hover:shadow-xl hover:shadow-[#0ccdff]/50 transition-all font-semibold text-lg hover:scale-105 transform">
           {t.cta.button}
         </button>
       </div>

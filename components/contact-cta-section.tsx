@@ -79,7 +79,7 @@ export function ContactCtaSection() {
               onChange={handleChange}
               placeholder={t.contact.namePlaceholder}
               required
-              className="px-4 py-3 rounded-xl bg-black/60 border border-white/70 text-orange-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition"
+              className="px-4 py-3 rounded-xl bg-black/60 border border-white/70 text-[#0ccdff] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0ccdff] focus:border-[#0ccdff] transition"
             />
 
             {/* Email Input */}
@@ -90,7 +90,7 @@ export function ContactCtaSection() {
               onChange={handleChange}
               placeholder={t.contact.emailPlaceholder}
               required
-              className="px-4 py-3 rounded-xl bg-black/60 border border-white/70 text-orange-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition"
+              className="px-4 py-3 rounded-xl bg-black/60 border border-white/70 text-[#0ccdff] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0ccdff] focus:border-[#0ccdff] transition"
             />
           </div>
 
@@ -102,14 +102,14 @@ export function ContactCtaSection() {
             placeholder={t.contact.messagePlaceholder}
             required
             rows={5}
-            className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/70 text-orange-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition resize-none"
+            className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/70 text-[#0ccdff] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0ccdff] focus:border-[#0ccdff] transition resize-none"
           />
 
           {/* Submit Button */}
           <div className="flex justify-center pt-4">
             <button
               type="submit"
-              className="px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full hover:shadow-lg hover:shadow-orange-500/65 transition-all font-semibold"
+              className="px-8 py-3 bg-gradient-to-r from-[#0ccdff] to-[#2660ff] text-white rounded-full hover:shadow-lg hover:shadow-[#0ccdff]/70 transition-all font-semibold"
             >
               {submitted ? t.contact.sending : t.contact.button}
             </button>
