@@ -51,13 +51,20 @@ export function Navigation() {
           {/* Pravá strana: přepínač jazyka + CTA */}
           <div className="flex items-center gap-2 sm:gap-3">
             <LanguageToggle />
-            <button className="hidden sm:inline-flex px-4 sm:px-5 py-1.5 sm:py-2
-                               bg-gradient-to-r from-[#0ccdff] to-[#2660ff]
-                               text-white rounded-full
-                               hover:shadow-lg hover:shadow-[#0ccdff]/70
-                               transition-all font-medium text-xs sm:text-sm">
-              {t.nav.contact}
-            </button>
+            <a
+               href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0VtHq0M_viypndTNdGH0pY82c9UbVW9_K_m2aVBJhRa1ePRu1xcsKJrguC87Cp_pnjRlmS2VOj"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="hidden sm:inline-flex px-4 sm:px-5 py-1.5 sm:py-2
+             bg-gradient-to-r from-[#0ccdff] to-[#2660ff]
+             text-white rounded-full
+             hover:shadow-lg hover:shadow-[#0ccdff]/70
+             transition-all font-medium text-xs sm:text-sm
+             items-center justify-center"
+            >
+             {t.nav.contact}
+            </a>
+
           </div>
         </div>
       </div>
