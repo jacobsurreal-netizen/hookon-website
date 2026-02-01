@@ -29,19 +29,19 @@ export function Navigation() {
             <div className="hidden md:flex items-center gap-8">
               <a
                 href="#about"
-                className="text-xs sm:text-sm text-gray-700 hover:text-orange-500 transition font-medium"
+                className="text-xs sm:text-sm text-gray-700 hover:text-[#2660ff] transition font-medium"
               >
                 {t.nav.about}
               </a>
               <a
                 href="#services"
-                className="text-xs sm:text-sm text-gray-700 hover:text-orange-500 transition font-medium"
+                className="text-xs sm:text-sm text-gray-700 hover:text-[#2660ff] transition font-medium"
               >
                 {t.nav.services}
               </a>
               <a
                 href="#work"
-                className="text-xs sm:text-sm text-gray-700 hover:text-orange-500 transition font-medium"
+                className="text-xs sm:text-sm text-gray-700 hover:text-[#2660ff] transition font-medium"
               >
                 {t.nav.work}
               </a>

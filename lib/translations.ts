@@ -53,9 +53,9 @@ export const translations = {
     },
     caseStudies: {
       title: "OUR WORK",
-      subtitle: "Real results from real clients",
+      subtitle: "Visualizing the future of your brand",
       project: "Project",
-      comingSoon: "Coming Soon",
+      comingSoon: "Demo",
     },
     cta: {
       title: "MULTIPLY THE POWER OF YOUR MARKETING.",
@@ -89,6 +89,35 @@ export const translations = {
       execTitle: "Execution & Enablement:",
       execDesc: "We deploy content production and automation with your team in control.",
     },
+    workCarousel: {
+      cards: [
+        {
+          id: 1,
+          title: "Brand Mockup",
+          description: "AI‑enhanced brand merchandise mockup.",
+        },
+        {
+          id: 2,
+          title: "Brand Promotion Kit",
+          description: "Premium branded gifts for campaigns and events.",
+        },
+        {
+          id: 3,
+          title: "Logo variation",
+          description: "Illustrate your logo in any situation.",
+        },
+        {
+          id: 4,
+          title: "Product with logo",
+          description: "Place your logo on any product in studio quality.",
+        },
+        {
+          id: 5,
+          title: "Mood & environment",
+          description: "Use your product in moody environment.",
+        },
+      ],
+    },
   },
   cs: {
     nav: {
@@ -98,7 +127,7 @@ export const translations = {
       contact: "SPOJIT SE",
     },
     hero: {
-      title: "UMOŽŇUJEME MARKETINGOVÝM TÝMŮM ŠKÁLOVAT OBSAH A TRŽBY POMOCÍ AI",
+      title: "POMOCÍ AI ZVYŠUJEME SCHOPNOST MARKETINGOVÝCH TÝMŮ ŠKÁLOVAT OBSAH A TRŽBY",
       subtitle: "Hookon.ai pomáhá marketingovým oddělením produkovat, optimalizovat a škálovat video, audio i textový obsah prostřednictvím systémů na bázi umělé inteligence.",
       subtitle2: "NENAHRAZUJEME TÝMY, ALE UPGRADUJEME ZPŮSOB, JAKÝM MARKETING FUNGUJE.",
       cta1: "CO PŘINÁŠÍME",
@@ -144,9 +173,9 @@ export const translations = {
     },
     caseStudies: {
       title: "NAŠE PRÁCE",
-      subtitle: "Skutečné výsledky od skutečných klientů",
+      subtitle: "Vizualizujeme budoucnost vaší značky",
       project: "Projekt",
-      comingSoon: "Již brzy",
+      comingSoon: "Ukázka",
     },
     cta: {
       title: "JSTE PŘIPRAVENI TRANSFORMOVAT SVŮJ MARKETING?",
@@ -179,6 +208,35 @@ export const translations = {
       systemDesc: "Navrhneme vám marketingový systém s využitím umělé inteligence na míru, který bude odpovídat vašemu týmu a cílům.",
       execTitle: "Provedení & zprovoznění:",
       execDesc: "Nasazujeme produkci a automatizaci obsahu s vaším týmem ve všech ohledech.",
+    },
+    workCarousel: {
+      cards: [
+        {
+          id: 1,
+          title: "Brandový mockup",
+          description: "AI‑vylepšený mockup značkového merchandisu.",
+        },
+        {
+          id: 2,
+          title: "Propagační set",
+          description: "Prémiové značkové dárky pro kampaně a eventy.",
+        },
+        {
+          id: 3,
+          title: "Variace loga",
+          description: "Ukažte své logo v libovolné situaci.",
+        },
+        {
+          id: 4,
+          title: "Produkt s logem",
+          description: "Umístěte své logo na jakýkoliv produkt ve studiové kvalitě.",
+        },
+        {
+          id: 5,
+          title: "Mood & prostředí",
+          description: "Použijte svůj produkt v náladovém prostředí.",
+        },
+      ],
     },
   },
   de: {
@@ -235,9 +293,9 @@ export const translations = {
     },
     caseStudies: {
       title: "UNSERE ARBEIT",
-      subtitle: "Echte Ergebnisse von echten Kunden",
+      subtitle: "Wir visualisieren die Zukunft Ihrer Marke",
       project: "Projekt",
-      comingSoon: "Demnächst",
+      comingSoon: "Beispiel",
     },
     cta: {
       title: "SIND SIE BEREIT, IHR MARKETING ZU VERÄNDERN?",
@@ -270,6 +328,35 @@ export const translations = {
       systemDesc: "Wir entwerfen ein maßgeschneidertes Marketingsystem auf Basis von KI, das perfekt zu Ihrem Team und Ihren Zielen passt.",
       execTitle: "Implementierung & Inbetriebnahme:",
       execDesc: "Gemeinsam mit Ihrem Team setzen wir die Content-Produktion und Automatisierung in allen Bereichen um.",
+    },
+    workCarousel: {
+    cards: [
+      {
+        id: 1,
+        title: "Brand-Mockup",
+        description: "KI‑optimiertes Mockup für Marken-Merchandise.",
+      },
+      {
+        id: 2,
+        title: "Brand Promotion Kit",
+        description: "Premium-Merchandise für Kampagnen und Events.",
+      },
+      {
+        id: 3,
+        title: "Logo-Variation",
+        description: "Visualisiere dein Logo in jeder erdenklichen Situation.",
+      },
+      {
+        id: 4,
+        title: "Produkt mit Logo",
+        description: "Platziere dein Logo auf jedem Produkt in Studioqualität.",
+      },
+      {
+        id: 5,
+        title: "Mood & Umgebung",
+        description: "Präsentiere dein Produkt in stimmungsvoller Umgebung.",
+        },
+      ],
     },
   },
 }

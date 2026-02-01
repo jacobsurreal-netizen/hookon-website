@@ -12,47 +12,48 @@ interface CarouselCard {
   image: string
 }
 
+interface TranslationCarouselCard {
+  id: number
+  title: string
+  description: string
+}
+
+interface WorkCarouselTranslations {
+  cards: TranslationCarouselCard[]
+}
+
+
+
 export function OurWorkCarousel() {
   const { language } = useLanguage()
-  const t = translations[language]
+  const t = translations[language] as { workCarousel: WorkCarouselTranslations; caseStudies: any }
+
   const containerRef = useRef<HTMLDivElement>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [cardRotations, setCardRotations] = useState<number[]>([0, 0, 0])
   const [selectedCard, setSelectedCard] = useState<CarouselCard | null>(null)
 
-  const cards: CarouselCard[] = [
-    {
-      id: 1,
-      title: "Brand Mockup",
-      description: "AI‑enhanced brand merchandise mockup.",
-      image: "/projects/mockup.png",
-    },
-    {
-      id: 2,
-      title: "Luxury present",
-      description: "Best HQ renders for commerce.",
-      image: "/projects/gift.png",
-    },
-    {
-      id: 3,
-      title: "Logo variation",
-      description: "Illustrate your logo in any situation.",
-      image: "/projects/logo.png",
-    },
-    {
-      id: 4,
-      title: "Product with logo",
-      description: "Place your logo on any product in studio quality.",
-      image: "/projects/product.png",
-    },
-    {
-      id: 5,
-      title: "Mood & environment",
-      description: "Use your product in moody environment.",
-      image: "/projects/render.png",
-    },
+  const baseCards: Pick<CarouselCard, "id" | "image">[] = [
+    { id: 1, image: "/projects/mockup.png" },
+    { id: 2, image: "/projects/gift.png" },
+    { id: 3, image: "/projects/logo.png" },
+    { id: 4, image: "/projects/product.png" },
+    { id: 5, image: "/projects/render.png" },
   ]
+
+  const cards: CarouselCard[] = baseCards.map((base) => {
+    const tCard =
+      t.workCarousel.cards.find((c) => c.id === base.id) ??
+      ({ id: base.id, title: "", description: "" } as TranslationCarouselCard)
+
+    return {
+      id: base.id,
+      title: tCard.title,
+      description: tCard.description,
+      image: base.image,
+    }
+  })
+
 
   const visibleCards = [
     cards[currentIndex % cards.length],
@@ -96,11 +97,12 @@ export function OurWorkCarousel() {
   }
 
   return (
-    <section id="work" 
-          className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-
+    <section
+      id="work"
+      className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
       <div className="absolute inset-0 border border-white/40 bg-black/40 bg-gradient-to-br from-orange-70/60 via-black/50 to-gray/70 backdrop-blur-2xl shadow-[0_0_60px_rgba(0,0,0,1.5)] ring-1 ring-white/20 z-0" />
-      
+
       <div className="relative max-w-6xl mx-auto z-10">
         <div className="text-center mb-16">
           <h2 className="behold-our-creation text-5xl md:text-6xl lg:text-9xl font-bold text-white-900/50 mb-6 text-balance">
@@ -115,7 +117,6 @@ export function OurWorkCarousel() {
           ref={containerRef}
           className="relative flex items-center justify-center min-h-96 perspective"
         >
-          {/* Carousel cards */}
           <div className="flex gap-8 justify-center items-center w-full px-4">
             {visibleCards.map((card, idx) => {
               const isCenter = idx === 1
@@ -128,25 +129,23 @@ export function OurWorkCarousel() {
                   className="relative transition-all duration-2000 ease-out"
                   style={{
                     transform: `scale(${scale}) rotateY(${cardRotations[idx]}deg)`,
-                    opacity: opacity,
+                    opacity,
                   }}
                 >
                   <div
                     onClick={() => setSelectedCard(card)}
                     className={`relative h-80 w-64 rounded-3xl cursor-pointer
-                                backdrop-blur-x4 bg-gradient-to-br from-white/5 to-white/10
-                                border-[3px] ${
-                                  isCenter
-                                    ? "border-[#0ccdff] shadow-2xl shadow-[#2660ff]"
-                                    : "border-white/40 hover:border-orange-200/60"
-                                }
-                                flex flex-col items-center justify-center overflow-hidden
-                                group transition-all duration-300`}
+                      backdrop-blur-x4 bg-gradient-to-br from-white/5 to-white/10
+                      border-[3px] ${
+                        isCenter
+                          ? "border-[#0ccdff] shadow-2xl shadow-[#2660ff]"
+                          : "border-white/40 hover:border-orange-200/60"
+                      }
+                      flex flex-col items-center justify-center overflow-hidden
+                      group transition-all duration-300`}
                   >
-                    {/* Card gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-br from--[#0ccdff] to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                    {/* Card content */}
                     <div className="text-center z-10 px-6">
                       <div className="w-full h-40 mb-4 rounded-2xl overflow-hidden">
                         <Image
@@ -175,7 +174,6 @@ export function OurWorkCarousel() {
             })}
           </div>
 
-          {/* Navigation buttons */}
           <button
             onClick={handlePrev}
             className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/30 backdrop-blur-md border border-white/50 hover:bg-white/15 transition-all duration-300 group"
@@ -186,7 +184,12 @@ export function OurWorkCarousel() {
               stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
           </button>
 
@@ -200,18 +203,24 @@ export function OurWorkCarousel() {
               stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </button>
 
-          {/* Dots indicator */}
           <div className="absolute bottom-0 flex gap-2 justify-center">
             {cards.map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  idx === currentIndex ? "bg-cyan-400 w-8" : "bg-white/40 w-2 hover:bg-white/60"
+                  idx === currentIndex
+                    ? "bg-cyan-400 w-8"
+                    : "bg-white/40 w-2 hover:bg-white/60"
                 }`}
               />
             ))}
@@ -219,11 +228,9 @@ export function OurWorkCarousel() {
         </div>
       </div>
 
-            {/* Overlay s velkým náhledem – jen nad karuselem */}
       {selectedCard && (
         <div
-          className="absolute inset-0 z-60 bg-black/80 backdrop-blur-md
-                     flex items-center justify-center px-4"
+          className="absolute inset-0 z-60 bg-black/80 backdrop-blur-md flex items-center justify-center px-4"
           onClick={() => setSelectedCard(null)}
         >
           <div
@@ -242,14 +249,13 @@ export function OurWorkCarousel() {
               target="_blank"
               rel="noopener noreferrer"
               className="absolute top-3 left-3 text-xs text-white/80 underline"
-             >
+            >
               Open full image
             </a>
 
             <button
               onClick={() => setSelectedCard(null)}
-              className="absolute top-3 right-3 rounded-full bg-black/60 border border-white/40
-                         w-9 h-9 flex items-center justify-center text-white hover:bg-black/80 transition"
+              className="absolute top-3 right-3 rounded-full bg-black/60 border border-white/40 w-9 h-9 flex items-center justify-center text-white hover:bg-black/80 transition"
             >
               ✕
             </button>
@@ -265,7 +271,6 @@ export function OurWorkCarousel() {
           </div>
         </div>
       )}
-
     </section>
   )
 }
