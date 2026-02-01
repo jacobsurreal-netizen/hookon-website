@@ -222,7 +222,7 @@ export function OurWorkCarousel() {
             {/* Overlay s velkým náhledem – jen nad karuselem */}
       {selectedCard && (
         <div
-          className="absolute inset-0 z-[60] bg-black/80 backdrop-blur-md
+          className="absolute inset-0 z-60 bg-black/80 backdrop-blur-md
                      flex items-center justify-center px-4"
           onClick={() => setSelectedCard(null)}
         >
