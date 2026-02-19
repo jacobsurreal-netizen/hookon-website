@@ -3,14 +3,23 @@
 import { useLanguage } from "@/lib/language-context"
 import { translations } from "@/lib/translations"
 import { LanguageToggle } from "./language-toggle"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
-export function Navigation() {
+type NavigationProps = {
+  variant?: "home" | "imprint"
+}
+
+export function Navigation({ variant = "home" }: NavigationProps) {
   const { language } = useLanguage()
   const t = translations[language]
+  const pathname = usePathname()
+
+  const prefix = variant === "home" ? "" : "/"
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md
-                    bg-gradient-to-br from-ember/30 via-orange/15 to-yellow-50/30
+                    bg-gradient-to-br from-black/30 to-white 40/70
                     border-b border-white/20">
       <div className="max-w-6xl mx-auto px-4 sm:px-5 lg:px-6">
         <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
@@ -18,33 +27,35 @@ export function Navigation() {
           <div className="flex items-center gap-4 sm:gap-6 md:gap-10">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
-              <img
-                src="/images/hookon-logo.png"
-                alt="hookon logo"
-                className="h-7 sm:h-8 md:h-9"
-              />
+              <Link href="/#hero">
+                <img
+                  src="/images/hookon-logo.png"
+                  alt="hookon logo"
+                  className="h-7 sm:h-8 md:h-9 cursor-pointer"
+                />
+              </Link>
             </div>
 
             {/* Nav Links – skryté na mobilu, viditelné od md */}
             <div className="hidden md:flex items-center gap-8">
-              <a
-                href="#about"
+              <Link
+                href={`${prefix}#about`}
                 className="text-xs sm:text-sm text-gray-700 hover:text-[#2660ff] transition font-medium"
               >
                 {t.nav.about}
-              </a>
-              <a
-                href="#services"
+              </Link>
+              <Link
+                href={`${prefix}#services`}
                 className="text-xs sm:text-sm text-gray-700 hover:text-[#2660ff] transition font-medium"
               >
                 {t.nav.services}
-              </a>
-              <a
-                href="#work"
+              </Link>
+              <Link
+                href={`${prefix}#work`}
                 className="text-xs sm:text-sm text-gray-700 hover:text-[#2660ff] transition font-medium"
               >
                 {t.nav.work}
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -52,19 +63,18 @@ export function Navigation() {
           <div className="flex items-center gap-2 sm:gap-3">
             <LanguageToggle />
             <a
-               href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0VtHq0M_viypndTNdGH0pY82c9UbVW9_K_m2aVBJhRa1ePRu1xcsKJrguC87Cp_pnjRlmS2VOj"
-               target="_blank"
-               rel="noopener noreferrer"
-               className="hidden sm:inline-flex px-4 sm:px-5 py-1.5 sm:py-2
-             bg-gradient-to-r from-[#0ccdff] to-[#2660ff]
-             text-white rounded-full
-             hover:shadow-lg hover:shadow-[#0ccdff]/70
-             transition-all font-medium text-xs sm:text-sm
-             items-center justify-center"
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0VtHq0M_viypndTNdGH0pY82c9UbVW9_K_m2aVBJhRa1ePRu1xcsKJrguC87Cp_pnjRlmS2VOj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex px-4 sm:px-5 py-1.5 sm:py-2
+                bg-gradient-to-r from-[#0ccdff] to-[#2660ff]
+                text-white rounded-full
+                hover:shadow-lg hover:shadow-[#0ccdff]/70
+                transition-all font-medium text-xs sm:text-sm
+                items-center justify-center"
             >
-             {t.nav.contact}
+              {t.nav.contact}
             </a>
-
           </div>
         </div>
       </div>

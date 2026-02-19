@@ -31,6 +31,7 @@ export function HeroSection() {
 
   return (
     <section
+     id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center py-8 sm:py-12 md:py-16 lg:py-20"
     >
       {/* Background overlay nad tím, co dělá body::before */}

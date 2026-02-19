@@ -14,7 +14,16 @@ export function Footer() {
           {/* Brand */}
           <div>
             <img src="/images/hookon-logo.png" alt="hookon" className="h-8 mb-0" />
+            
             <p className="text-gray-900 text-sm">{t.footer.tagline}</p>
+            <h4 className="font-semibold text-gray-900 mb-4">Hookon, s.r.o.</h4>
+<p className="text-xs text-gray-900">
+  <a href="/provozovatel" className="hover:text-[#2660ff] transition">
+    IČO: 24506087
+  </a>
+</p>
+
+
           </div>
 
           {/* Quick Links */}

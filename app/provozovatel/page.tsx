@@ -1,18 +1,21 @@
-import React from "react";
+import React from "react"
+import { Navigation } from "@/components/navigation"
 
 export const metadata = {
-  title: "Provozovatel a kontaktní údaje | Hookon, s. r. o.",
+  title: "Provozovatel webu Hookon.ai | Hookon, s. r. o.",
   description:
-    "Oficiální identifikační údaje společnosti Hookon, s. r. o. se sídlem ve Stodu. Najdete zde IČO, zápis v obchodním rejstříku a přímé kontakty na jednatele.",
-};
+    "Oficiální identifikační údaje společnosti Hookon, s. r. o. se sídlem ve Stodu. Najdete zde IČO, zápis v obchodním rejstříku a kontaktní údaje.",
+}
 
 export default function ProvozovatelPage() {
   return (
-    <main className="max-w-3xl mx-auto py-16 px-4">
-      <h1 className="text-3xl font-semibold mb-8">
-        Provozovatel webu Hookon.ai
-      </h1>
+    <>
+      <Navigation variant="imprint" />
 
+      <main className="max-w-3xl mx-auto px-4 pt-28 pb-16">
+        <h1 className="text-3xl font-semibold mb-8">
+          Provozovatel webu Hookon.ai
+        </h1>
       <section className="space-y-2 mb-8">
         <h2 className="text-xl font-semibold">Informace o provozovateli</h2>
         <p><strong>Název společnosti:</strong> Hookon, s. r. o.</p>
@@ -34,5 +37,6 @@ export default function ProvozovatelPage() {
         </p>
       </section>
     </main>
+     </>
   );
 }
