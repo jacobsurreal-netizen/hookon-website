@@ -22,17 +22,17 @@ export function Footer() {
             <h4 className="font-semibold text-gray-900 mb-4">Product</h4>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>
-                <a href="#about" className="hover:text-orange-500 transition">
+                <a href="#about" className="hover:text-[#2660ff] transition">
                   About
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-orange-500 transition">
+                <a href="#services" className="hover:text-[#2660ff] transition">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#work" className="hover:text-orange-500 transition">
+                <a href="#work" className="hover:text-[#2660ff] transition">
                   Portfolio
                 </a>
               </li>
@@ -44,17 +44,17 @@ export function Footer() {
             <h4 className="font-semibold text-gray-900 mb-4">Resources</h4>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>
-                <a href="#" className="hover:text-orange-500 transition">
+                <a href="#" className="hover:text-[#2660ff] transition">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-500 transition">
+                <a href="#" className="hover:text-[#2660ff] transition">
                   Documentation
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-500 transition">
+                <a href="#" className="hover:text-[#2660ff] transition">
                   Support
                 </a>
               </li>
