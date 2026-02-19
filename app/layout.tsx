@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   title: "hookon - AI-Powered Advertising & Branding Studio",
   description:
     "Hook Your Audience with AI-Powered Advertising. Performance-focused, scalable strategies for CMOs, marketing teams, and SMBs.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/hookom icon.svg",
         type: "image/svg+xml",
       },
     ],
