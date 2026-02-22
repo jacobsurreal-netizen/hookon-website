@@ -4,7 +4,7 @@ import { useLanguage } from "@/lib/language-context"
 import { translations } from "@/lib/translations"
 import { LanguageToggle } from "./language-toggle"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { SocialLinks } from "@/components/ui/social-links"
 
 type NavigationProps = {
   variant?: "home" | "imprint"
@@ -13,17 +13,18 @@ type NavigationProps = {
 export function Navigation({ variant = "home" }: NavigationProps) {
   const { language } = useLanguage()
   const t = translations[language]
-  const pathname = usePathname()
 
   const prefix = variant === "home" ? "" : "/"
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md
-                    bg-gradient-to-br from-black/30 to-white 40/70
-                    border-b border-white/20">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md
+                 bg-gradient-to-br from-gray-600/70 to-blue-300/50
+                 border-b border-white/20"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-5 lg:px-6">
         <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
-          {/* Logo + desktop odkazy */}
+          {/* Logo + socials (desktop) */}
           <div className="flex items-center gap-4 sm:gap-6 md:gap-10">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
@@ -36,26 +37,9 @@ export function Navigation({ variant = "home" }: NavigationProps) {
               </Link>
             </div>
 
-            {/* Nav Links – skryté na mobilu, viditelné od md */}
-            <div className="hidden md:flex items-center gap-8">
-              <Link
-                href={`${prefix}#about`}
-                className="text-xs sm:text-sm text-gray-700 hover:text-[#2660ff] transition font-medium"
-              >
-                {t.nav.about}
-              </Link>
-              <Link
-                href={`${prefix}#services`}
-                className="text-xs sm:text-sm text-gray-700 hover:text-[#2660ff] transition font-medium"
-              >
-                {t.nav.services}
-              </Link>
-              <Link
-                href={`${prefix}#work`}
-                className="text-xs sm:text-sm text-gray-700 hover:text-[#2660ff] transition font-medium"
-              >
-                {t.nav.work}
-              </Link>
+            {/* Social icons – jen od md */}
+            <div className="hidden md:flex items-center">
+              <SocialLinks />
             </div>
           </div>
 
@@ -67,11 +51,11 @@ export function Navigation({ variant = "home" }: NavigationProps) {
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex px-4 sm:px-5 py-1.5 sm:py-2
-                bg-gradient-to-r from-[#0ccdff] to-[#2660ff]
-                text-white rounded-full
-                hover:shadow-lg hover:shadow-[#0ccdff]/70
-                transition-all font-medium text-xs sm:text-sm
-                items-center justify-center"
+                         bg-gradient-to-r from-[#0ccdff] to-[#2660ff]
+                         text-white rounded-full
+                         hover:shadow-lg hover:shadow-[#0ccdff]/70
+                         transition-all font-medium text-xs sm:text-sm
+                         items-center justify-center"
             >
               {t.nav.contact}
             </a>

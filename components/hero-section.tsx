@@ -35,7 +35,7 @@ export function HeroSection() {
       className="relative min-h-screen flex flex-col items-center justify-center py-8 sm:py-12 md:py-16 lg:py-20"
     >
       {/* Background overlay nad tím, co dělá body::before */}
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-800/30 via-blue/30 to-white/20 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-800/40 via-blue-300/30 to-white/20 -z-10" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center w-full">
         {/* Logo */}

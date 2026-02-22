@@ -118,6 +118,23 @@ export const translations = {
         },
       ],
     },
+    legal: {
+      title: "Legal operator of Hookon.ai",
+      heading: "Company information",
+      companyNameLabel: "Company Name",
+      companyNameValue: "Hookon, s. r. o.",
+      addressLabel: "Registered Office",
+      addressValue: "Baarova 552, 333 01 Stod, Czech Republic",
+      icoLabel: "Company ID (IČO)",
+      icoValue: "24506087",
+      registerLabel: "Commercial Register",
+      registerValue:
+        "Registered in the Commercial Register maintained by the Regional Court in Plzeň, Section C, Entry 48080 (registered on 13 February 2026).",
+      directorLabel: "Managing Director",
+      directorValue: "Ondřej Pech",
+      emailLabel: "E-mail",
+      phoneLabel: "Phone",
+    },
   },
   cs: {
     nav: {
@@ -238,6 +255,23 @@ export const translations = {
         },
       ],
     },
+    legal: {
+      title: "Provozovatel webu Hookon.ai",
+      heading: "Informace o provozovateli",
+      companyNameLabel: "Název společnosti",
+      companyNameValue: "Hookon, s. r. o.",
+      addressLabel: "Sídlo",
+      addressValue: "Baarova 552, 333 01 Stod, Česká republika",
+      icoLabel: "IČO",
+      icoValue: "24506087",
+      registerLabel: "Zápis v evidenci",
+      registerValue:
+        "Společnost zapsaná v obchodním rejstříku vedeném u Krajského soudu v Plzni, oddíl C, vložka 48080 (zapsáno dne 13. února 2026).",
+      directorLabel: "Statutární orgán (jednatel)",
+      directorValue: "Ondřej Pech",
+      emailLabel: "E-mail",
+      phoneLabel: "Telefon",
+    },
   },
   de: {
     nav: {
@@ -357,6 +391,23 @@ export const translations = {
         description: "Präsentiere dein Produkt in stimmungsvoller Umgebung.",
         },
       ],
+    },
+    legal: {
+      title: "Impressum",
+      heading: "Angaben gemäß § 5 TMG",
+      companyNameLabel: "Unternehmensname",
+      companyNameValue: "Hookon, s. r. o.",
+      addressLabel: "Sitz der Gesellschaft",
+      addressValue: "Baarova 552, 333 01 Stod, Tschechische Republik",
+      icoLabel: "Identifikationsnummer (IČO)",
+      icoValue: "24506087",
+      registerLabel: "Registereintrag",
+      registerValue:
+        "Eingetragen im Handelsregister des Krajský soud v Plzni (Regionalgericht in Pilsen), Abteilung C, Einlage 48080 (eingetragen am 13. Februar 2026).",
+      directorLabel: "Vertreten durch (Geschäftsführer)",
+      directorValue: "Ondřej Pech",
+      emailLabel: "E-Mail",
+      phoneLabel: "Telefon",
     },
   },
 }
