@@ -4,7 +4,7 @@ export const translations = {
       about: "About",
       services: "Services",
       work: "Work",
-      contact: "BOOK A CALL",
+      contact: "LET'S TALK",
     },
     hero: {
       title: "WE ENABLE MARKETING DEPARTMENTS TO SCALE CONTENT & REVENUE WITH AI",
@@ -60,7 +60,7 @@ export const translations = {
     cta: {
       title: "MULTIPLY THE POWER OF YOUR MARKETING.",
       subtitle: "Even a great team can do more with the best tools. We’ll help you implement AI so it takes over the routine while your people focus on strategy.",
-      button: "BOOK A CALL",
+      button: "LET'S TALK",
     },
     contact: {
       title: "SCHEDULE A CONSULTATION",
@@ -143,7 +143,7 @@ export const translations = {
       about: "O nás",
       services: "Služby",
       work: "Naše práce",
-      contact: "SPOJIT SE",
+      contact: "NAPIŠTE NÁM",
     },
     hero: {
       title: "POMOCÍ AI ZVYŠUJEME SCHOPNOST MARKETINGOVÝCH TÝMŮ ŠKÁLOVAT OBSAH A TRŽBY",
@@ -199,7 +199,7 @@ export const translations = {
     cta: {
       title: "JSTE PŘIPRAVENI TRANSFORMOVAT SVŮJ MARKETING?",
       subtitle: "Přidejte se k vizionářským značkám, které posouvají hranice díky AI. Postaráme se o to, aby AI převzala rutinu a váš tým se mohl soustředit na to, na čem opravdu záleží – strategii.",
-      button: "BOOKNOUT HOVOR",
+      button: "NAPIŠTE NÁM",
     },
     contact: {
       title: "KONTAKTUJTE NÁS",
@@ -282,7 +282,7 @@ export const translations = {
       about: "Über uns",
       services: "Dienstleistungen",
       work: "Unsere Arbeit",
-      contact: "VERBINDEN",
+      contact: "LASS UNS REDEN",
     },
     hero: {
       title: "WIR ERMÖGLICHEN MARKETINGABTEILUNGEN, CONTENT & UMSATZ MIT KI ZU SKALIEREN",
@@ -338,7 +338,7 @@ export const translations = {
     cta: {
       title: "SIND SIE BEREIT, IHR MARKETING ZU VERÄNDERN?",
       subtitle: "Schließen Sie sich visionären Marken an, die mit KI Grenzen verschieben. Wir sorgen dafür, dass KI Routineaufgaben übernimmt und sich Ihr Team auf das Wesentliche konzentrieren kann – die Strategie.",
-      button: "CALL BUCHEN",
+      button: "LASS UNS REDEN",
     },
     contact: {
       title: "KONTAKTIEREN SIE UNS",

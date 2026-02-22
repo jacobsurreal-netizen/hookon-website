@@ -28,7 +28,7 @@ export function Navigation({ variant = "home" }: NavigationProps) {
           <div className="flex items-center gap-4 sm:gap-6 md:gap-10">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
-              <Link href="/#hero">
+              <Link href="/#home">
                 <img
                   src="/images/hookon-logo.png"
                   alt="hookon logo"
