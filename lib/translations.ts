@@ -74,9 +74,11 @@ export const translations = {
     },
     footer: {
       tagline: "Built for marketing teams",
-      copyright: "© 2026 hookon.ai All rights reserved.",
+      companyName: "Hookon, s.r.o.",
+      companyAddress: "Baarova 552\n333 01 Stod\nCzech Republic\nCompany ID (IČO): 24506087",
       contact: "Contact",
       email: "info@hookon.ai",
+      copyright: "© 2026 hookon.ai All rights reserved.",
     },
     video: {
       title: "SEE HOOKON.ai IN ACTION",
@@ -211,9 +213,11 @@ export const translations = {
     },
     footer: {
       tagline: "Vytvořeno pro marketingové týmy.",
-      copyright: "© 2026 hookon. Všechna práva vyhrazena.",
+      companyName: "Hookon, s.r.o.",
+      companyAddress: "Baarova 552\n333 01 Stod\nČeská republika\nIČO: 24506087",
       contact: "Kontakt",
       email: "info@hookon.ai",
+      copyright: "© 2026 hookon. Všechna práva vyhrazena.",
     },
        video: {
       title: "PODÍVEJTE SE NA HOOKON.ai V AKCI",
@@ -348,9 +352,11 @@ export const translations = {
     },
     footer: {
       tagline: "Gebaut für Marketingteams.",
-      copyright: "© 2026 hookon. Alle Rechte vorbehalten.",
+       companyName: "Hookon, s.r.o.",
+       companyAddress: "Baarova 552\n333 01 Stod\nTschechische Republik\nUID: 24506087",
       contact: "Kontakt",
       email: "info@hookon.ai",
+      copyright: "© 2026 hookon. Alle Rechte vorbehalten.",
     },
        video: {
       title: "ERLEBEN SIE HOOKON.ai IN AKTION.",

@@ -34,7 +34,6 @@ export default function Home() {
   };
 
   return (
-    <LanguageProvider>
       <main className="min-h-screen">
         <Navigation />
 
@@ -139,7 +138,6 @@ hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
 
         </div>
       </main>
-    </LanguageProvider>
   );
 }
 

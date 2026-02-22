@@ -6,7 +6,6 @@ import { FeatureCardsRow } from "@/components/feature-cards-row"
 export function HeroSection() {
   const { language } = useLanguage()
   const t = translations[language]
-  
 
   const features = [
     {
