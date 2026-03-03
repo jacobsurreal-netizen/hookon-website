@@ -11,7 +11,7 @@ export function CaseStudiesSection() {
 
   return (
     <section id="work" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-green-50/30 to-white -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-500/30 via-green-900/20 to-slate-600/10 -z-10" />
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
@@ -23,9 +23,9 @@ export function CaseStudiesSection() {
           {placeholderCards.map((card) => (
             <div
               key={card.id}
-              className="relative h-96 rounded-3xl backdrop-blur-xl bg-gradient-to-br from-white/50 to-white/30 border border-white/40 flex items-center justify-center overflow-hidden group hover:border-orange-[#0ccdff] transition-all duration-300"
+              className="relative h-96 rounded-3xl backdrop-blur-xl bg-gradient-to-br from-slate-800/90 to-slate-500/90 border border-slate-700/30 flex items-center justify-center overflow-hidden group hover:border-orange-[#0ccdff] transition-all duration-300"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="text-center z-10">
                 <div className="text-5xl mb-3">🎯</div>
                 <p className="text-lg font-semibold text-gray-900">{t.caseStudies.comingSoon}</p>

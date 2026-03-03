@@ -10,11 +10,11 @@ export function CTASection() {
 
   return (
     <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-amber-600/30 via-blue-400/20 to-slate-400/40 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#6425004f] via-[#02011839] to-[#00001d2f] -z-7S0" />
 
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-bold text-[#0ccdff] mb-10 text-balance">{t.cta.title}</h2>
-        <p className="text-xl text-white/80 mb-10 font-bold max-w-2xl mx-auto">{t.cta.subtitle}</p>
+        <p className="text-xl text-slate-100 mb-10 font-bold max-w-2xl mx-auto">{t.cta.subtitle}</p>
         <a
            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0VtHq0M_viypndTNdGH0pY82c9UbVW9_K_m2aVBJhRa1ePRu1xcsKJrguC87Cp_pnjRlmS2VOj"
            target="_blank"

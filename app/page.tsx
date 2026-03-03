@@ -50,7 +50,7 @@ function HomeInner() {
             relative
             max-w-6xl mx-auto
             rounded-[32px]
-            bg-gradient-to-b from-yellow/12 via-orange/8 to-yellow/17
+            bg-gradient-to-b from-slate-800/40 via-black/55 to-purple-900/40
             backdrop-blur-5xl
             border border-white/30
             ring-1 ring-inset ring-white/9

@@ -34,7 +34,7 @@ export function FeaturesSection() {
       id="services"
       className="relative py-10 sm:py-14 md:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-green-100/20 to-white/10 -z-70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#17003b5d] via-green-100/10 to-[#05005e40] -z-20" />
 
       <div className="max-w-6xl mx-auto">
         {/* Nadpis + podnadpis */}
@@ -53,7 +53,7 @@ export function FeaturesSection() {
             <div
               key={idx}
               className="group relative p-4 sm:p-5 md:p-6 rounded-3xl backdrop-blur-xl
-                         bg-gradient-to-br from-black/40 via-slate-400/20 to-black/10
+                         bg-gradient-to-br from-black/20 via-slate-400/10 to-black/5
                          border border-white/25 hover:border[#2660ff]
                          transition-all duration-300 hover:shadow-xl hover:shadow-[#0ccdff]"
             >

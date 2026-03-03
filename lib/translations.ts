@@ -74,7 +74,7 @@ export const translations = {
       subtitle:
         "Even a great team can do more with the best tools. We’ll help you implement a performance content engine so it takes over the routine while your people focus on strategy.",
       // text tlačítka může reflektovat “Lower My Cost Per Asset”
-      button: "LOWER MY COST PER ASSET",
+      button: "LET'S TALK",
       trust: "No more waiting weeks for an agency.",
     },
     contact: {

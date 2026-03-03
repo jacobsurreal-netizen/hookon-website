@@ -34,7 +34,7 @@ export function HeroSection() {
       className="relative min-h-screen flex flex-col items-center justify-center py-8 sm:py-12 md:py-16 lg:py-20"
     >
       {/* Background overlay nad tím, co dělá body::before */}
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-800/40 via-blue-300/30 to-white/20 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#2f110080] via-[#2600518d] to-[#03001470] -z-70" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center w-full">
         
@@ -64,7 +64,7 @@ export function HeroSection() {
         </div>
 
         {/* Subtitle 1 */}
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-slate-50/90 mb-4 sm:mb-6 md:mb-8 lg:mb-40 max-w-2xl mt-16 mx-auto text-balance">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-slate-100/80 mb-4 sm:mb-6 md:mb-8 lg:mb-40 max-w-2xl mt-16 mx-auto text-balance">
           {t.hero.subtitle}
         </p>
 

@@ -32,14 +32,14 @@ export function BenefitsSection() {
   return (
     <section id="about" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       
-      <div className="absolute inset-2 bg-gradient-to-tr from-slate-800/30 via-slate-400/40 to-slate-600/20 -z-10" />
+      <div className="absolute inset-2 bg-gradient-to-tr from-slate-800/10 via-slate-900/10 to-black/20 -z-10" />
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-slate-50/90 mb-4 text-balance">{t.benefits.title}</h2>
-          <p className="mt-10 text-lg font-bold text-[#0ccdff] max-w-2xl mx-auto">{t.benefits.subtitle1}</p>
+          <p className="mt-20 text-lg font-bold text-[#0ccdff] max-w-2xl mx-auto">{t.benefits.subtitle1}</p>
           <p className="mt-5 text-lg font-bold text-slate-50/90 max-w-2xl mx-auto">{t.benefits.subtitle2}</p>
-          <h3 className="mt-12 text-4xl md:text-4xl font-bold text-slate-50/90 mb-4 text-balance">{t.benefits.title1}</h3>
+          <h3 className="mt-30 text-2xl md:text-4xl font-bold text-slate-50/90 mb-10 text-balance">{t.benefits.title1}</h3>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -72,7 +72,7 @@ export function BenefitsSection() {
                 
               </div>
               <h3 className="text-xl font-bold text-white/90 mb-5 mx-auto text-center flex flex-col items-center w-full">{benefit.name}</h3>
-              <p className="font-bold text-slate-800/80 text-center leading-relaxed">{benefit.description}</p>
+              <p className="font-bold text-slate-100/60 text-center leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>
