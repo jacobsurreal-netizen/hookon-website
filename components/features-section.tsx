@@ -42,7 +42,7 @@ export function FeaturesSection() {
           <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-slate-50/90 mb-4 sm:mb-6 md:mb-8 text-balance">
             {t.features.title}
           </h2>
-          <p className="text-sm sm:text-base md:text-lg font-bold text-[#2660ff] max-w-2xl md:max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg font-bold text-[#0ccdff] max-w-2xl md:max-w-3xl mx-auto">
             {t.features.subtitle}
           </p>
         </div>
@@ -72,10 +72,10 @@ export function FeaturesSection() {
                 />
               </div>
 
-              <h3 className="text-lg sm:text-xl font-bold text-slate-800/80 text-center mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl font-bold text-[#46d7ff] text-center mb-3 sm:mb-4">
                 {feature.name}
               </h3>
-              <p className="text-sm sm:text-base text-slate-100/90 text-center font-bold leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-50/90 text-center font-bold leading-relaxed">
                 {feature.description}
               </p>
             </div>

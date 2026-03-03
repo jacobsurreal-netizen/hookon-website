@@ -7,30 +7,30 @@ export const translations = {
       contact: "LET'S TALK",
     },
     hero: {
-      title: "WE ENABLE MARKETING DEPARTMENTS TO SCALE CONTENT & REVENUE WITH AI",
-      subtitle: "Hookon.ai helps marketing departments produce, optimize, and scale video, audio, voice, and written content through AI-powered systems.",
+      title: "STOP RISING CPAs. TEST 10X MORE CREATIVES WITHOUT INCREASING PRODUCTION COSTS.",
+      subtitle: "Hookon.ai is your performance content engine. We turn a single idea into dozens of ready-to-test variants in minutes. Get multiple variants from a single offer and solve creative fatigue before it burns your budget.",
       subtitle2: "WE DON’T REPLACE TEAMS; WE UPGRADE HOW MARKETING WORKS.",
-      cta1: "TYPICAL RESULTS",
-      cta2: "30–50% lower marketing operating costs",
-      cta3: "3–7× higher content output",
-      cta4: "20–40% faster execution",
-      cta5: "10–25% uplift in marketing-driven revenue",
+      cta1: "HOW IT WORKS",
+      cta2: "Input (Master): We take your one functional idea, brand video, or offer.",
+      cta3: "Variation (Scale): We create a ''Hook Bank'' (3–6 different video starts), various angles, and formats for TikTok, Shorts, and LinkedIn.",
+      cta4: "Iteration (Growth): Based on data, we immediately turn winning variants into new derivatives.",
+     //  cta5: "10–25% uplift in marketing-driven revenue", // 
     },
     features: {
-      title: "AI-POWERED MULTIMODAL PRODUCTION",
-      subtitle: "We help marketing departments produce and scale brand-safe content integrated into one AI-powered system:",
+      title: "Problems We Solve",
+      subtitle: "We help marketing departments produce and scale brand-safe content integrated into one AI-powered system",
       feature1: {
-        name: "AI-Powered Advertising",
+        name: "Slow Market Response:",
         description:
-          "AI video ads, commercials & brand films",
+          "Creative production will no longer take weeks. Respond to competitors or data in days, not months.",
       },
       feature2: {
-        name: "Brand Strategy",
-        description: "Performance copy, landing pages & long-form text",
+        name: "Extremely Expensive Content:",
+        description: "A single video asset costing thousands that only lasts 14 days is unsustainable. We drastically lower the price per usable asset through automated variation.",
       },
       feature3: {
-        name: "Creative Solutions",
-        description: "Audio, podcasts, voice content & AI spokespersons",
+        name: "Creative Fatigue:",
+        description: "Your campaigns will no longer die after a week due to a lack of content. We deliver a continuous ''supply chain'' of variants that keep performance stable.",
       },
     },
     benefits: {
@@ -58,9 +58,9 @@ export const translations = {
       comingSoon: "Demo",
     },
     cta: {
-      title: "MULTIPLY THE POWER OF YOUR MARKETING.",
+      title: "NO MORE WAITING WEEKS FOR AN AGENCY",
       subtitle: "Even a great team can do more with the best tools. We’ll help you implement AI so it takes over the routine while your people focus on strategy.",
-      button: "LET'S TALK",
+      button: "BOOK A CALL",
     },
     contact: {
       title: "SCHEDULE A CONSULTATION",
@@ -146,14 +146,14 @@ export const translations = {
       contact: "NAPIŠTE NÁM",
     },
     hero: {
-      title: "POMOCÍ AI ZVYŠUJEME SCHOPNOST MARKETINGOVÝCH TÝMŮ ŠKÁLOVAT OBSAH A TRŽBY",
-      subtitle: "Hookon.ai pomáhá marketingovým oddělením produkovat, optimalizovat a škálovat video, audio i textový obsah prostřednictvím systémů na bázi umělé inteligence.",
+      title: "ZASTAVTE RŮST CPA. TESTUJTE 10× VÍCE KREATIV BEZ NAVÝŠENÍ PRODUKČNÍCH NÁKLADŮ.",
+      subtitle: "Hookon.ai je váš výkonový content engine. Proměníme jeden nápad v desítky variant připravených pro okamžité testování. Získejte různé varianty z jedné nabídky a vyřešte creative fatigue dřív, než vám spálí budget.",
       subtitle2: "NENAHRAZUJEME TÝMY, ALE UPGRADUJEME ZPŮSOB, JAKÝM MARKETING FUNGUJE.",
-      cta1: "CO PŘINÁŠÍME",
-      cta2: "30–50 % nižší provozní náklady na marketing",
-      cta3: "3–7× vyšší produkce obsahu",
-      cta4: "20–40 % rychlejší exekuce",
-      cta5: "10–25 % nárůst tržeb generovaných marketingem",
+      cta1: "JAK TO FUNGUJE",
+      cta2: "Vstup (Master): Vezmeme váš jeden funkční nápad, brand video nebo nabídku.",
+      cta3: "Variantování (Scale): Vyrobíme ''Hook banku'' (3-6 různých začátků videa), různé úhly a formáty pro TikTok, Shorts i LinkedIn.",
+      cta4: "Iterace (Growth): Na základě dat okamžitě přetáčíme vítězné varianty do nových derivátů.",
+      // cta5: "10–25 % nárůst tržeb generovaných marketingem", //
     },
     features: {
       title: "AI MULTIMODÁLNÍ PRODUKCE",
@@ -197,7 +197,7 @@ export const translations = {
       comingSoon: "Ukázka",
     },
     cta: {
-      title: "JSTE PŘIPRAVENI TRANSFORMOVAT SVŮJ MARKETING?",
+      title: "UŽ ŽÁDNE ČEKÁNÍ TÝDNY NA AGENTURU.",
       subtitle: "Přidejte se k vizionářským značkám, které posouvají hranice díky AI. Postaráme se o to, aby AI převzala rutinu a váš tým se mohl soustředit na to, na čem opravdu záleží – strategii.",
       button: "NAPIŠTE NÁM",
     },

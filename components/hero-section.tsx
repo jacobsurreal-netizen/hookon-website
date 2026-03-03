@@ -37,29 +37,39 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-br from-amber-800/40 via-blue-300/30 to-white/20 -z-10" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center w-full">
+        
+
+        <h1
+  className="relative text-center font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl mt-32 mx-auto"
+>
+  {/* spodní vrstva – čistý text kvůli diakritice */}
+  <span className="absolute inset-0 text-white">
+    {t.hero.title}
+  </span>
+
+  {/* horní vrstva – glass efekt */}
+  <span className="glass-heading relative">
+    {t.hero.title}
+  </span>
+</h1>
+
+
         {/* Logo */}
-        <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 flex justify-center">
+        <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 mt-32 flex justify-center">
           <img
             src="/images/hookon_logo.png"
             alt="hookon"
-            className="h-40 sm:h-40 md:h-60 lg:h-90 object-contain"
+            className="h-12 sm:h-12 md:h-18 lg:h-26 object-contain"
           />
         </div>
 
-        {/* H1 */}
-        <h1
-            className="glass-heading text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-5 md:mb-6 lg:mb-24 text-balance">
-          {t.hero.title}
-        </h1>
-
-
         {/* Subtitle 1 */}
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-slate-800/80 mb-4 sm:mb-6 md:mb-8 lg:mb-40 max-w-2xl mx-auto text-balance">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-slate-50/90 mb-4 sm:mb-6 md:mb-8 lg:mb-40 max-w-2xl mt-16 mx-auto text-balance">
           {t.hero.subtitle}
         </p>
 
         {/* Subtitle 2 */}
-        <p className="text-base sm:text-lg md:text-xl lg:text-4xl font-bold text-[#2660ff] mb-8 sm:mb-10 md:mb-12 lg:mb-16 max-w-3xl mx-auto text-balance">
+        <p className="text-base sm:text-lg md:text-xl lg:text-4xl font-bold text-[#0ccdff] mb-8 sm:mb-10 md:mb-12 lg:mb-16 max-w-2xl mx-auto text-balance">
           {t.hero.subtitle2}
         </p>
       </div>
@@ -71,7 +81,7 @@ export function HeroSection() {
           heroCta2={t.hero.cta2}
           heroCta3={t.hero.cta3}
           heroCta4={t.hero.cta4}
-          heroCta5={t.hero.cta5}
+          //heroCta5={t.hero.cta5}
           features={features}
         />
       </div>

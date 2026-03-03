@@ -56,7 +56,7 @@ export function ContactCtaSection() {
           <h2 className="text-4xl sm:text-6xl font-bold text-slate-100/90 mb-4 text-balance">
           {t.contact.title}
           </h2>
-          <p className="text-lg text-gray-900/70 text-pretty">
+          <p className="text-lg text-[#0ccdff] text-pretty">
           {t.contact.subtitle}
           </p>
         </div>
