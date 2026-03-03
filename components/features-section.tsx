@@ -10,20 +10,20 @@ export function FeaturesSection() {
 
   const features = [
     {
-      iconPath: "/icons/ai-powered-advertising.png",
-      iconAlt: "AI-Powered Advertising icon",
+      iconPath: "/icons/time.svg",
+      iconAlt: "TIME icon",
       name: t.features.feature1.name,
       description: t.features.feature1.description,
     },
     {
-      iconPath: "/icons/brand-strategy.png",
-      iconAlt: "Brand Strategy icon",
+      iconPath: "/icons/expensive.svg",
+      iconAlt: "EXPENSIVE icon",
       name: t.features.feature2.name,
       description: t.features.feature2.description,
     },
     {
-      iconPath: "/icons/creative-flow.png",
-      iconAlt: "Creative Flow icon",
+      iconPath: "/icons/target.svg",
+      iconAlt: "TARGET icon",
       name: t.features.feature3.name,
       description: t.features.feature3.description,
     },

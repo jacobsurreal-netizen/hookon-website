@@ -12,20 +12,20 @@ export function BenefitsSection() {
     {
       name: t.benefits.benefit1.name,
       description: t.benefits.benefit1.description,
-      iconPath: "/icons/speed.png",
-      iconAlt: "Speed icon",
+      iconPath: "/icons/CMO.svg",
+      iconAlt: "CMO icon",
     },
     {
       name: t.benefits.benefit2.name,
       description: t.benefits.benefit2.description,
-      iconPath: "/icons/performance.png",
-      iconAlt: "Performance icon",
+      iconPath: "/icons/GROW.svg",
+      iconAlt: "GROW icon",
     },
     {
       name: t.benefits.benefit3.name,
       description: t.benefits.benefit3.description,
-      iconPath: "/icons/performance-analytics.png",
-      iconAlt: "Scalability icon",
+      iconPath: "/icons/LOCATE.svg",
+      iconAlt: "LOCATE icon",
     },
   ]
 

@@ -368,8 +368,8 @@
   }
 
   @keyframes heroFisheyeMobile {
-    0%, 100% { transform: scale(1.01); }
-    50%      { transform: scale(1.03); }
+    0%, 100% { transform: scale(0); }
+    50%      { transform: scale(0); }
   }
 }
 
@@ -446,3 +446,18 @@
 }
 
 
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* default font pro celý projekt */
+html,
+body {
+  letter-spacing: 0.04em;
+  font-family: "Montserrat-Bold", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
