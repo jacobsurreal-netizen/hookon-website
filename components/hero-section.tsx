@@ -1,7 +1,7 @@
 "use client"
 import { useLanguage } from "@/lib/language-context"
 import { translations } from "@/lib/translations"
-import { FeatureCardsRow } from "@/components/feature-cards-row"
+
 
 export function HeroSection() {
   const { language } = useLanguage()
@@ -74,17 +74,7 @@ export function HeroSection() {
         </p>
       </div>
 
-      {/* FeatureCardsRow */}
-      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FeatureCardsRow
-          heroCta1={t.hero.cta1}
-          heroCta2={t.hero.cta2}
-          heroCta3={t.hero.cta3}
-          heroCta4={t.hero.cta4}
-          //heroCta5={t.hero.cta5}
-          features={features}
-        />
-      </div>
+      
     </section>
   )
 }

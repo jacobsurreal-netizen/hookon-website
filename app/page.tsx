@@ -10,6 +10,7 @@ import { ContactCtaSection } from "@/components/contact-cta-section"
 import { CTASection } from "@/components/cta-section"
 import { OurWorkCarousel } from "@/components/our-work-carousel"
 import React, { useState } from "react";
+import { FeatureCardsRow } from "@/components/feature-cards-row"
 
 export default function Home() {
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
@@ -125,6 +126,20 @@ hover:shadow-[0_50px_180px_rgba(0,0,0,0.30)]
 
       <HeroSection />
       <CTASection />
+
+{/* FeatureCardsRow – dočasně vypnuto, bude samostatná sekce */}
+      {/*
+      <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+        <FeatureCardsRow
+          heroCta1={t.hero.cta1}
+          heroCta2={t.hero.cta2}
+          heroCta3={t.hero.cta3}
+          heroCta4={t.hero.cta4}
+          features={features}
+        />
+      </section>
+      */}
+      
       <FeaturesSection />
       <LazyVideoSection
         src="/videos/Canibal_Corpse_Wear.mp4">

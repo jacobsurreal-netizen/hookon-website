@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/lib/language-context"
 import { translations } from "@/lib/translations"
+import { FeatureCardsRow } from "@/components/feature-cards-row"
 
 export function CTASection() {
   const { language } = useLanguage()
@@ -24,6 +25,9 @@ export function CTASection() {
         </a>
 
       </div>
+
+      
     </section>
   )
+ 
 }
